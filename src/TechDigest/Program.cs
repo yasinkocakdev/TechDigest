@@ -43,7 +43,9 @@ else
 {
     // GEMINI_MODEL verilmezse en güncel flash modeli otomatik seçilir.
     var model = Environment.GetEnvironmentVariable("GEMINI_MODEL") is { Length: > 0 } m ? m : null;
-    var summarizer = new GeminiSummarizer(http, geminiKey, model);
+    // Gemini 21 haberi tek seferde özetlerken 1 dakikadan uzun sürebiliyor; ayrı, daha sabırlı bir istemci.
+    using var geminiHttp = new HttpClient { Timeout = TimeSpan.FromMinutes(3) };
+    var summarizer = new GeminiSummarizer(geminiHttp, geminiKey, model);
     var ok = await summarizer.AddTurkishSummariesAsync(digestItems);
     Console.WriteLine(ok ? $"3) Türkçe özetler eklendi ({summarizer.Model})." : "3) Türkçe özet alınamadı, mail İngilizce gidecek.");
 }

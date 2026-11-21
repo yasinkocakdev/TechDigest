@@ -18,7 +18,7 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
     private static readonly JsonSerializerOptions Json = new(JsonSerializerDefaults.Web);
 
     /// <summary>Son kullanılan model; log'a yazmak için.</summary>
-    public string? Model { get; private set; } = model;
+    public string? Model { get; private set; }
 
     /// <summary>Yoğunluk (503/429/500) durumunda her modelde bekleme süreleri.</summary>
     public static TimeSpan[] RetryDelays { get; set; } = [TimeSpan.FromSeconds(10), TimeSpan.FromSeconds(30)];
@@ -91,7 +91,19 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
             })
         };
 
-        using var response = await http.SendAsync(request, ct);
+        HttpResponseMessage response;
+        try
+        {
+            response = await http.SendAsync(request, ct);
+        }
+        catch (TaskCanceledException) when (!ct.IsCancellationRequested)
+        {
+            // HttpClient zaman aşımı: yavaş model. Aynı modeli tekrar denemek yerine sıradakine geçilir.
+            Console.WriteLine($"  ✗ Gemini: '{modelName}' {http.Timeout.TotalSeconds:0} sn içinde cevap vermedi.");
+            return (HttpStatusCode.RequestTimeout, null);
+        }
+
+        using var _ = response;
         if (!response.IsSuccessStatusCode)
         {
             await LogErrorAsync(response, ct);
