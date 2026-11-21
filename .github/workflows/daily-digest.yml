@@ -6,6 +6,11 @@ on:
     # so we start early to land in the inbox around 07:00.
     - cron: "45 3 * * *"
   workflow_dispatch: # "Run workflow" button for manual test runs
+    inputs:
+      dry_run:
+        description: "Dry run: build the digest but don't send email"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -25,7 +30,7 @@ jobs:
         run: dotnet test --verbosity minimal
 
       - name: Build and send digest
-        run: dotnet run -c Release --project src/TechDigest
+        run: dotnet run -c Release --project src/TechDigest -- ${{ inputs.dry_run && '--dry-run' || '' }}
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

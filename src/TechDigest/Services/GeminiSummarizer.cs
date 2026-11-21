@@ -20,28 +20,39 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
     /// <summary>Son kullanılan model; log'a yazmak için.</summary>
     public string? Model { get; private set; } = model;
 
+    /// <summary>Yoğunluk (503/429/500) durumunda her modelde bekleme süreleri.</summary>
+    public static TimeSpan[] RetryDelays { get; set; } = [TimeSpan.FromSeconds(10), TimeSpan.FromSeconds(30)];
+    private const int MaxModels = 3;
+
     public async Task<bool> AddTurkishSummariesAsync(IReadOnlyList<DigestItem> items, CancellationToken ct = default)
     {
         if (items.Count == 0) return true;
         try
         {
-            // Model verilmemişse en güncel flash modelini kendimiz buluruz.
-            Model ??= await FindModelAsync(ct);
-            if (Model is null) return false;
+            var prompt = BuildPrompt(items);
+            // GEMINI_MODEL verildiyse önce o denenir; olmazsa ya da verilmediyse güncel flash modelleri sırayla.
+            var candidates = model is not null ? [model] : await FindModelsAsync(ct);
+            var listedModels = model is null;
 
-            var (status, text) = await GenerateAsync(Model, BuildPrompt(items), ct);
-
-            // Model kaldırılmış olabilir (Google eski modelleri emekliye ayırıyor): yenisini bul, bir kez dene.
-            if (status == HttpStatusCode.NotFound)
+            for (var i = 0; i < candidates.Count && i < MaxModels; i++)
             {
-                Console.WriteLine($"  ✗ Gemini: '{Model}' bulunamadı, güncel model aranıyor...");
-                var fallback = await FindModelAsync(ct);
-                if (fallback is null || fallback == Model) return false;
-                Model = fallback;
-                (status, text) = await GenerateAsync(Model, BuildPrompt(items), ct);
-            }
+                Model = candidates[i];
+                var (status, text) = await GenerateWithRetryAsync(Model, prompt, ct);
 
-            return status == HttpStatusCode.OK && Apply(items, text);
+                if (status == HttpStatusCode.OK) return Apply(items, text);
+                if (status is HttpStatusCode.BadRequest or HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden)
+                    return false; // anahtar/istek sorunu: başka model denemek fayda etmez
+
+                // 404 (model kaldırılmış) ya da sürekli yoğunluk: sıradaki modele geç.
+                if (!listedModels)
+                {
+                    candidates = [.. candidates, .. (await FindModelsAsync(ct)).Where(m => m != model)];
+                    listedModels = true;
+                }
+                if (i + 1 < candidates.Count && i + 1 < MaxModels)
+                    Console.WriteLine($"  → Gemini: '{Model}' olmadı, '{candidates[i + 1]}' deneniyor...");
+            }
+            return false;
         }
         catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException or JsonException)
         {
@@ -49,6 +60,23 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
             return false;
         }
     }
+
+    private async Task<(HttpStatusCode Status, string? Text)> GenerateWithRetryAsync(string modelName, string prompt, CancellationToken ct)
+    {
+        var (status, text) = await GenerateAsync(modelName, prompt, ct);
+        foreach (var delay in RetryDelays)
+        {
+            if (!IsTransient(status)) break;
+            Console.WriteLine($"  … Gemini yoğun, {delay.TotalSeconds:0} sn sonra tekrar denenecek.");
+            await Task.Delay(delay, ct);
+            (status, text) = await GenerateAsync(modelName, prompt, ct);
+        }
+        return (status, text);
+    }
+
+    public static bool IsTransient(HttpStatusCode status) =>
+        status is HttpStatusCode.ServiceUnavailable or HttpStatusCode.TooManyRequests
+            or HttpStatusCode.InternalServerError or HttpStatusCode.GatewayTimeout;
 
     private async Task<(HttpStatusCode Status, string? Text)> GenerateAsync(string modelName, string prompt, CancellationToken ct)
     {
@@ -74,8 +102,8 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
         return (response.StatusCode, body?.Candidates?.FirstOrDefault()?.Content?.Parts?.FirstOrDefault()?.Text);
     }
 
-    /// <summary>Anahtarın erişebildiği modelleri listeler ve en uygununu seçer.</summary>
-    private async Task<string?> FindModelAsync(CancellationToken ct)
+    /// <summary>Anahtarın erişebildiği modelleri listeler, uygunluk sırasına koyar.</summary>
+    private async Task<List<string>> FindModelsAsync(CancellationToken ct)
     {
         using var request = new HttpRequestMessage(HttpMethod.Get, $"{BaseUrl}/models?pageSize=1000")
         {
@@ -85,13 +113,15 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
         if (!response.IsSuccessStatusCode)
         {
             await LogErrorAsync(response, ct);
-            return null;
+            return [];
         }
 
         var list = await response.Content.ReadFromJsonAsync<ModelList>(Json, ct);
-        var picked = PickModel(list?.Models ?? []);
-        Console.WriteLine(picked is null ? "  ✗ Gemini: uygun model bulunamadı." : $"  ✓ Gemini modeli seçildi: {picked}");
-        return picked;
+        var ranked = RankModels(list?.Models ?? []);
+        Console.WriteLine(ranked.Count == 0
+            ? "  ✗ Gemini: uygun model bulunamadı."
+            : $"  ✓ Gemini modelleri: {string.Join(", ", ranked.Take(MaxModels))}");
+        return ranked;
     }
 
     private static async Task LogErrorAsync(HttpResponseMessage response, CancellationToken ct)
@@ -108,7 +138,10 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
     /// Önce kararlı sürümler, yoksa preview, o da yoksa herhangi bir flash modeli.
     /// Ağdan bağımsız, test edilebilir.
     /// </summary>
-    public static string? PickModel(IEnumerable<ModelInfo> models)
+    public static string? PickModel(IEnumerable<ModelInfo> models) => RankModels(models).FirstOrDefault();
+
+    /// <summary>Uygun flash modellerini tercih sırasına koyar: kararlı → preview → diğer; her grupta yeni sürüm önce.</summary>
+    public static List<string> RankModels(IEnumerable<ModelInfo> models)
     {
         var flash = models
             .Where(m => m.SupportedGenerationMethods?.Contains("generateContent") == true)
@@ -119,14 +152,13 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
         bool Clean(string n) => !AvoidWords.Any(w => n.Contains(w, StringComparison.OrdinalIgnoreCase));
         bool Preview(string n) => n.Contains("preview", StringComparison.OrdinalIgnoreCase);
 
-        var candidates = flash.Where(n => Clean(n) && !Preview(n)).ToList();
-        if (candidates.Count == 0) candidates = flash.Where(Clean).ToList();
-        if (candidates.Count == 0) candidates = flash;
+        int Tier(string n) => Clean(n) ? (Preview(n) ? 1 : 0) : 2;
 
-        return candidates
-            .OrderByDescending(VersionOf)
+        return flash
+            .OrderBy(Tier)
+            .ThenByDescending(VersionOf)
             .ThenBy(n => n.Length) // aynı sürümde "gemini-3.0-flash", "gemini-3.0-flash-001"den önce gelsin
-            .FirstOrDefault();
+            .ToList();
     }
 
     private static Version VersionOf(string name)

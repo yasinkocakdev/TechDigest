@@ -57,4 +57,20 @@ public class GeminiSummarizerTests
             GeminiSummarizer.PickModel([M("gemini-4.0-flash-preview"), M("gemini-3.0-pro")]));
         Assert.Null(GeminiSummarizer.PickModel([M("gemini-3.0-pro"), M("gemini-3.0-flash", "embedContent")]));
     }
+
+    [Fact]
+    public void RankModels_OrdersStableThenPreviewThenOthers()
+    {
+        var ranked = GeminiSummarizer.RankModels(
+            [M("gemini-3.0-flash-lite"), M("gemini-3.0-flash"), M("gemini-4.0-flash-preview"), M("gemini-3.8-flash")]);
+        Assert.Equal(["gemini-3.8-flash", "gemini-3.0-flash", "gemini-4.0-flash-preview", "gemini-3.0-flash-lite"], ranked);
+    }
+
+    [Theory]
+    [InlineData(System.Net.HttpStatusCode.ServiceUnavailable, true)]
+    [InlineData(System.Net.HttpStatusCode.TooManyRequests, true)]
+    [InlineData(System.Net.HttpStatusCode.NotFound, false)]
+    [InlineData(System.Net.HttpStatusCode.Forbidden, false)]
+    public void IsTransient_OnlyForOverloadErrors(System.Net.HttpStatusCode status, bool expected) =>
+        Assert.Equal(expected, GeminiSummarizer.IsTransient(status));
 }
