@@ -43,7 +43,7 @@ public sealed class EmailSender(string gmailAddress, string appPassword)
     }
 
     public static List<string> ParseRecipients(string recipients) =>
-        recipients.Split([',', ';', '\n'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+        recipients.Split(new[] { ',', ';', '\n' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
             .Distinct(StringComparer.OrdinalIgnoreCase)
             .ToList();
 }
