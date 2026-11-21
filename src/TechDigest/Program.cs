@@ -41,9 +41,11 @@ if (string.IsNullOrWhiteSpace(geminiKey))
 }
 else
 {
-    var model = Environment.GetEnvironmentVariable("GEMINI_MODEL") is { Length: > 0 } m ? m : "gemini-2.5-flash";
-    var ok = await new GeminiSummarizer(http, geminiKey, model).AddTurkishSummariesAsync(digestItems);
-    Console.WriteLine(ok ? $"3) Türkçe özetler eklendi ({model})." : "3) Türkçe özet alınamadı, mail İngilizce gidecek.");
+    // GEMINI_MODEL verilmezse en güncel flash modeli otomatik seçilir.
+    var model = Environment.GetEnvironmentVariable("GEMINI_MODEL") is { Length: > 0 } m ? m : null;
+    var summarizer = new GeminiSummarizer(http, geminiKey, model);
+    var ok = await summarizer.AddTurkishSummariesAsync(digestItems);
+    Console.WriteLine(ok ? $"3) Türkçe özetler eklendi ({summarizer.Model})." : "3) Türkçe özet alınamadı, mail İngilizce gidecek.");
 }
 
 // 4. Mail oluştur

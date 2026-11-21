@@ -34,4 +34,27 @@ public class GeminiSummarizerTests
         Assert.Contains("[0] Title 0", prompt);
         Assert.Contains("[2] Title 2", prompt);
     }
+
+    private static GeminiSummarizer.ModelInfo M(string name, params string[] methods) =>
+        new($"models/{name}", methods.Length == 0 ? ["generateContent"] : [.. methods]);
+
+    [Fact]
+    public void PickModel_PrefersNewestStableFlash()
+    {
+        var models = new[]
+        {
+            M("gemini-2.0-flash"), M("gemini-3.0-flash"), M("gemini-3.0-flash-lite"),
+            M("gemini-3.0-pro"), M("gemini-3.5-flash-preview"), M("gemini-3.0-flash-001"),
+            M("text-embedding-004", "embedContent"),
+        };
+        Assert.Equal("gemini-3.0-flash", GeminiSummarizer.PickModel(models));
+    }
+
+    [Fact]
+    public void PickModel_FallsBackToPreview_ThenNull()
+    {
+        Assert.Equal("gemini-4.0-flash-preview",
+            GeminiSummarizer.PickModel([M("gemini-4.0-flash-preview"), M("gemini-3.0-pro")]));
+        Assert.Null(GeminiSummarizer.PickModel([M("gemini-3.0-pro"), M("gemini-3.0-flash", "embedContent")]));
+    }
 }

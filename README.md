@@ -60,7 +60,8 @@ To send a real email, set the environment variables below and run without `--dry
 
 4. **Test it** — *Actions → Daily TechDigest → Run workflow*.
 
-Optional: set a `GEMINI_MODEL` environment variable to change the model (default `gemini-2.5-flash`).
+Optional: set a `GEMINI_MODEL` environment variable to pin a model. Otherwise the newest stable
+`flash` model available to your key is picked automatically (so retired models don't break the digest).
 
 > **Note:** GitHub pauses scheduled workflows in public repos after 60 days without commits.
 > If that happens you'll get an email from GitHub — just re-enable the workflow in the Actions tab.
