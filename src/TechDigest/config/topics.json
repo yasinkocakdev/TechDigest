@@ -1,0 +1,37 @@
+{
+  "maxPerTopic": 5,
+  "maxTotal": 25,
+  "excludeKeywords": ["better buy", "should you buy", "stock to buy", "stocks to buy", "buy the dip", "on the dip", "price target", "gone too far", "motley fool", "seeking alpha", "zacks", "nasdaq:", "nyse:"],
+  "topics": [
+    {
+      "name": "AI Companies & Models",
+      "emoji": "🤖",
+      "keywords": ["openai", "anthropic", "claude", "chatgpt", "gemini", "gpt", "deepmind", "xai", "grok", "mistral", "deepseek", "llm", "ai model", "artificial intelligence", "ipo", "funding round", "agi", "sam altman", "dario amodei"]
+    },
+    {
+      "name": "Chips & US–China",
+      "emoji": "🔌",
+      "keywords": ["nvidia", "jensen huang", "tsmc", "huawei", "semiconductor", "chip", "chips", "gpu", "export control", "export controls", "smic", "amd", "intel", "asml", "beijing", "china", "taiwan", "data center", "data centers"]
+    },
+    {
+      "name": "Markets & Big Tech",
+      "emoji": "📈",
+      "keywords": ["nasdaq", "stock", "stocks", "shares", "earnings", "valuation", "market cap", "sell-off", "investors", "apple", "microsoft", "alphabet", "google", "amazon", "meta", "tesla", "trillion"]
+    },
+    {
+      "name": "Software & Developers",
+      "emoji": "💻",
+      "keywords": ["github", ".net", "c#", "open source", "open-source", "developer", "developers", "programming", "coding", "software", "linux", "windows", "copilot", "cursor", "api"]
+    },
+    {
+      "name": "Security",
+      "emoji": "🛡️",
+      "keywords": ["breach", "hack", "hacked", "hackers", "ransomware", "vulnerability", "cyberattack", "cybersecurity", "cyber-security", "malware", "zero-day", "outage"]
+    },
+    {
+      "name": "Regulation & Policy",
+      "emoji": "⚖️",
+      "keywords": ["regulation", "regulators", "ai act", "antitrust", "lawsuit", "ban", "banned", "congress", "white house", "trump", "eu", "european commission", "ftc", "doj", "tariff", "tariffs", "court"]
+    }
+  ]
+}

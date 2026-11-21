@@ -25,3 +25,15 @@ public class FeedFetcherTests
     public void Clean_StripsTagsAndEntities(string? input, string expected)
         => Assert.Equal(expected, FeedFetcher.Clean(input));
 }
+
+public class SplitPublisherTests
+{
+    [Fact]
+    public void SplitPublisher_GoogleNews_ExtractsPublisher() =>
+        Assert.Equal(("Nvidia hits record", "Reuters"),
+            FeedFetcher.SplitPublisher("Nvidia hits record - Reuters", "Google News: Chips"));
+
+    [Fact]
+    public void SplitPublisher_OtherSources_Untouched() =>
+        Assert.Equal(("A - B", "BBC"), FeedFetcher.SplitPublisher("A - B", "BBC"));
+}

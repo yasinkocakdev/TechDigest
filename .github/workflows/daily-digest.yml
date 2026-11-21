@@ -1,0 +1,33 @@
+name: Daily TechDigest
+
+on:
+  schedule:
+    # 03:45 UTC = 06:45 Istanbul. GitHub can start scheduled jobs a few minutes late,
+    # so we start early to land in the inbox around 07:00.
+    - cron: "45 3 * * *"
+  workflow_dispatch: # "Run workflow" button for manual test runs
+
+permissions:
+  contents: read
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Test
+        run: dotnet test --verbosity minimal
+
+      - name: Build and send digest
+        run: dotnet run -c Release --project src/TechDigest
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          TO_ADDRESS: ${{ secrets.TO_ADDRESS }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

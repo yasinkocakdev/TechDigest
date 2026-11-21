@@ -48,15 +48,33 @@ public sealed partial class FeedFetcher(HttpClient http)
         using var reader = XmlReader.Create(xml, new XmlReaderSettings { DtdProcessing = DtdProcessing.Ignore });
         var feed = SyndicationFeed.Load(reader);
 
-        return feed.Items.Select(item => new NewsItem(
-            Title: Clean(item.Title?.Text),
-            Summary: Clean(item.Summary?.Text),
-            Link: item.Links.FirstOrDefault()?.Uri.ToString() ?? "",
-            Source: sourceName,
-            // Bazı kaynaklar sadece LastUpdatedTime doldurur.
-            Published: item.PublishDate != default ? item.PublishDate : item.LastUpdatedTime))
+        return feed.Items.Select(item =>
+            {
+                var (title, source) = SplitPublisher(Clean(item.Title?.Text), sourceName);
+                var summary = Clean(item.Summary?.Text);
+                // Google News açıklaması sadece başlığın tekrarı; işe yaramıyor.
+                if (summary.StartsWith(title, StringComparison.OrdinalIgnoreCase)) summary = "";
+                return new NewsItem(
+                    Title: title,
+                    Summary: summary,
+                    Link: item.Links.FirstOrDefault()?.Uri.ToString() ?? "",
+                    Source: source,
+                    // Bazı kaynaklar sadece LastUpdatedTime doldurur.
+                    Published: item.PublishDate != default ? item.PublishDate : item.LastUpdatedTime);
+            })
             .Where(i => i.Title.Length > 0)
             .ToList();
+    }
+
+    /// <summary>
+    /// Google News başlıkları "Nvidia hits record - Reuters" şeklinde. Asıl yayıncıyı
+    /// kaynak olarak gösterir, başlıktan ayırırız. Diğer kaynaklarda dokunmayız.
+    /// </summary>
+    public static (string Title, string Source) SplitPublisher(string title, string sourceName)
+    {
+        if (!sourceName.StartsWith("Google News", StringComparison.OrdinalIgnoreCase)) return (title, sourceName);
+        var idx = title.LastIndexOf(" - ", StringComparison.Ordinal);
+        return idx > 0 ? (title[..idx].Trim(), title[(idx + 3)..].Trim()) : (title, sourceName);
     }
 
     /// <summary>HTML etiketlerini ve &amp;amp; gibi kodlamaları temizler.</summary>
