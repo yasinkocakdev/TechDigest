@@ -55,7 +55,7 @@ To send a real email, set the environment variables below and run without `--dry
    |---|---|
    | `GMAIL_ADDRESS` | the Gmail address that sends the digest |
    | `GMAIL_APP_PASSWORD` | the 16-character app password |
-   | `TO_ADDRESS` | where the digest should arrive |
+   | `TO_ADDRESS` | where the digest should arrive — separate multiple addresses with commas (sent as BCC) |
    | `GEMINI_API_KEY` | Gemini key (optional) |
 
 4. **Test it** — *Actions → Daily TechDigest → Run workflow*.
