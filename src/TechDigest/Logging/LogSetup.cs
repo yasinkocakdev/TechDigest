@@ -10,10 +10,15 @@ namespace TechDigest.Logging;
 /// GitHub Actions'ta uyarı/hatalar ayrıca <c>::warning::</c>/<c>::error::</c> olarak işaretlenir,
 /// böylece çalışma özetinde görünürler.
 /// </summary>
-public sealed class CompactFormatter() : ConsoleFormatter(Name)
+public sealed class CompactFormatter : ConsoleFormatter
 {
     public new const string Name = "compact";
-    private static readonly bool InActions = Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true";
+    private readonly bool InActions;
+
+    public CompactFormatter() : this(Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true") { }
+
+    /// <summary>Testler için: GitHub Actions modu ortam değişkeninden bağımsız seçilebilir.</summary>
+    internal CompactFormatter(bool inActions) : base(Name) => InActions = inActions;
 
     public override void Write<TState>(in LogEntry<TState> entry, IExternalScopeProvider? scopes, TextWriter writer)
     {
