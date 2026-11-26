@@ -143,33 +143,40 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
         Console.WriteLine($"  ✗ Gemini: HTTP {(int)response.StatusCode} {snippet.ReplaceLineEndings(" ")}");
     }
 
-    private static readonly string[] AvoidWords = ["lite", "image", "tts", "live", "thinking", "exp", "audio", "embedding"];
+    private static readonly string[] AvoidWords = ["image", "tts", "live", "thinking", "exp", "audio", "embedding"];
 
     /// <summary>
-    /// generateContent destekleyen "flash" modellerinden en yüksek sürümlüsünü seçer.
-    /// Önce kararlı sürümler, yoksa preview, o da yoksa herhangi bir flash modeli.
-    /// Ağdan bağımsız, test edilebilir.
+    /// generateContent destekleyen "flash" modellerinden en uygununu seçer. Ağdan bağımsız, test edilebilir.
     /// </summary>
     public static string? PickModel(IEnumerable<ModelInfo> models) => RankModels(models).FirstOrDefault();
 
-    /// <summary>Uygun flash modellerini tercih sırasına koyar: kararlı → preview → diğer; her grupta yeni sürüm önce.</summary>
+    /// <summary>
+    /// Deneme sırası: en yeni 3 kararlı flash → kararlı lite modeller (daha az yoğun) →
+    /// eski kararlı flash'lar → preview → diğerleri. Her grupta yeni sürüm önce.
+    /// </summary>
     public static List<string> RankModels(IEnumerable<ModelInfo> models)
     {
         var flash = models
             .Where(m => m.SupportedGenerationMethods?.Contains("generateContent") == true)
             .Select(m => m.Name.Replace("models/", ""))
             .Where(n => n.Contains("flash", StringComparison.OrdinalIgnoreCase))
+            .OrderByDescending(VersionOf)
+            .ThenBy(n => n.Length) // aynı sürümde "gemini-3.0-flash", "gemini-3.0-flash-001"den önce gelsin
             .ToList();
 
-        bool Clean(string n) => !AvoidWords.Any(w => n.Contains(w, StringComparison.OrdinalIgnoreCase));
-        bool Preview(string n) => n.Contains("preview", StringComparison.OrdinalIgnoreCase);
+        bool Has(string n, string w) => n.Contains(w, StringComparison.OrdinalIgnoreCase);
+        bool Clean(string n) => !AvoidWords.Any(w => Has(n, w)) && !Has(n, "preview");
 
-        int Tier(string n) => Clean(n) ? (Preview(n) ? 1 : 0) : 2;
+        var stable = flash.Where(n => Clean(n) && !Has(n, "lite")).ToList();
+        var lite = flash.Where(n => Clean(n) && Has(n, "lite")).ToList();
+        var preview = flash.Where(n => !AvoidWords.Any(w => Has(n, w)) && Has(n, "preview")).ToList();
 
-        return flash
-            .OrderBy(Tier)
-            .ThenByDescending(VersionOf)
-            .ThenBy(n => n.Length) // aynı sürümde "gemini-3.0-flash", "gemini-3.0-flash-001"den önce gelsin
+        return stable.Take(3)
+            .Concat(lite)
+            .Concat(stable.Skip(3))
+            .Concat(preview)
+            .Concat(flash)
+            .Distinct()
             .ToList();
     }
 

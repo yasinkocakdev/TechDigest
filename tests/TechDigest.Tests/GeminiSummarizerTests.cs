@@ -59,11 +59,18 @@ public class GeminiSummarizerTests
     }
 
     [Fact]
-    public void RankModels_OrdersStableThenPreviewThenOthers()
+    public void RankModels_TriesThreeNewestStable_ThenLite_ThenOlder_ThenPreview()
     {
         var ranked = GeminiSummarizer.RankModels(
-            [M("gemini-3.0-flash-lite"), M("gemini-3.0-flash"), M("gemini-4.0-flash-preview"), M("gemini-3.8-flash")]);
-        Assert.Equal(["gemini-3.8-flash", "gemini-3.0-flash", "gemini-4.0-flash-preview", "gemini-3.0-flash-lite"], ranked);
+        [
+            M("gemini-2.5-flash"), M("gemini-3.5-flash"), M("gemini-3.6-flash"), M("gemini-3.7-flash"),
+            M("gemini-3.8-flash"), M("gemini-3.6-flash-lite"), M("gemini-4.0-flash-preview"), M("gemini-3.8-flash-image"),
+        ]);
+        Assert.Equal(
+        [
+            "gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.6-flash-lite",
+            "gemini-3.5-flash", "gemini-2.5-flash", "gemini-4.0-flash-preview", "gemini-3.8-flash-image",
+        ], ranked);
     }
 
     [Theory]
