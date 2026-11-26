@@ -1,32 +1,35 @@
 name: Daily TechDigest
 run-name: ${{ inputs.dry_run && 'Dry run' || 'Send digest' }}
 
+# Ana tetikleyici: cron-job.org her sabah 07:00'de (İstanbul) GitHub API ile workflow_dispatch çağırır.
+# GitHub'ın kendi zamanlayıcısı 8-10 saat geciktiği için sadece yedektir ve o gün gönderildiyse kendini atlar.
+# Bu dosyanın adı değişmemeli: cron-job.org .../workflows/daily-digest.yml/dispatches adresini çağırıyor.
 on:
-  # Main trigger: cron-job.org calls the GitHub API (workflow_dispatch) every day at 07:00 Istanbul.
-  # GitHub's own scheduler was delaying runs by 8-10 hours, so it is only a backup now.
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Dry run: build the digest but don't send email"
+        description: "Dry run: build the digest but don't send email or publish"
         type: boolean
         default: false
   schedule:
-    # Backup: 05:00 UTC = 08:00 Istanbul (usually starts later). Skips itself if
-    # today's digest was already sent.
-    - cron: "0 5 * * *"
+    - cron: "0 5 * * *" # 08:00 İstanbul, yedek
 
 permissions:
   contents: read
-  actions: read # needed to check whether today's digest was already sent
 
 concurrency:
   group: daily-digest
   cancel-in-progress: false
 
 jobs:
-  send-digest:
+  digest:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: write # sadece archive dalına günün JSON'unu yazmak için
+      actions: read # "bugün gönderildi mi" kontrolü için
+    outputs:
+      published: ${{ steps.publish.outputs.published }}
     steps:
       - name: Skip if already sent today
         id: guard
@@ -43,23 +46,68 @@ jobs:
             echo "skip=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/checkout@v5
-        if: steps.guard.outputs.skip != 'true'
-
-      - uses: actions/setup-dotnet@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         if: steps.guard.outputs.skip != 'true'
         with:
-          dotnet-version: "8.0.x"
+          persist-credentials: false
 
-      - name: Test
+      - name: Check out archive branch
+        if: steps.guard.outputs.skip != 'true' && !inputs.dry_run
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: archive
+          path: archive
+
+      - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
         if: steps.guard.outputs.skip != 'true'
-        run: dotnet test --verbosity minimal
+        with:
+          global-json-file: global.json
+          cache: true
+          cache-dependency-path: "**/packages.lock.json"
 
       - name: Build and send digest
         if: steps.guard.outputs.skip != 'true'
-        run: dotnet run -c Release --project src/TechDigest -- ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: |
+          dotnet restore --locked-mode src/TechDigest
+          dotnet run -c Release --no-restore --project src/TechDigest -- ${{ inputs.dry_run && '--dry-run' || '' }}
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           TO_ADDRESS: ${{ secrets.TO_ADDRESS }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ARCHIVE_DIR: ${{ !inputs.dry_run && 'archive' || '' }}
+
+      - name: Keep email preview
+        if: steps.guard.outputs.skip != 'true' && always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: digest-${{ github.run_id }}
+          path: out/
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Commit to archive
+        id: publish
+        if: steps.guard.outputs.skip != 'true' && !inputs.dry_run
+        working-directory: archive
+        run: |
+          git config user.name "techdigest-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add days index.json
+          if git diff --cached --quiet; then
+            echo "Nothing new to archive."
+          else
+            git commit -q -m "Digest $(TZ=Europe/Istanbul date +%F)"
+            git push -q origin HEAD:archive
+          fi
+          echo "published=true" >> "$GITHUB_OUTPUT"
+
+  # Site, arşiv güncellenince yeniden yayınlanır. Mail zaten gönderildi; bu iş başarısız olsa da bülten etkilenmez.
+  site:
+    needs: digest
+    if: needs.digest.outputs.published == 'true'
+    uses: ./.github/workflows/pages.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
