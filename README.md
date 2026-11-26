@@ -25,6 +25,13 @@ to each story and picks five IELTS words from the day's English — then emails 
 |---|---|
 | <img src="docs/images/email-light.png" alt="Email in light mode" width="300"> <img src="docs/images/email-dark.png" alt="Email in dark mode" width="300"> | <img src="docs/images/site-words-dark.png" alt="IELTS flashcards on the web archive in dark mode" width="420"><br><br>• Search, topic filters, prev/next day<br>• "Hide Turkish" to practise reading in English<br>• Flip-card IELTS word bank of the last 30 days<br>• Light/dark theme, smooth transitions, works on phones |
 
+## Built while learning
+
+I'm building TechDigest while learning C# and preparing for IELTS — pair-programming with an AI assistant and making
+sure I can explain every decision myself. The Turkish guide **[docs/NASIL-CALISIR.md](docs/NASIL-CALISIR.md)** walks
+through the whole system (clustering, the scoring formula, Gemini fallbacks, security choices) and keeps a
+**learning log** of the real problems I hit — like the "07:00" email that arrived at 15:00.
+
 ## How it decides what matters
 
 Most "news digests" sort by keywords — so a keyword-stuffed post from a content farm beats a story that Reuters,
