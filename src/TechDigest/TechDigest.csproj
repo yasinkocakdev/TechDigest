@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="4.16.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.15" />
-    <PackageReference Include="System.ServiceModel.Syndication" Version="10.0.15" />
+    <PackageReference Include="MailKit" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="11.0.0" />
+    <PackageReference Include="System.ServiceModel.Syndication" Version="11.0.0" />
     <!-- MailKit/MimeKit'in çektiği 10.0.0 sürümünde bilinen açık var (GHSA-846f-f764-76mx): yamalı sürüme sabitle. -->
-    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.15" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="11.0.0" />
   </ItemGroup>
 
   <ItemGroup>
