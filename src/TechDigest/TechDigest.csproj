@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="4.16.0" />
+    <PackageReference Include="MailKit" Version="4.18.2" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.15" />
     <PackageReference Include="System.ServiceModel.Syndication" Version="10.0.15" />
     <!-- MailKit/MimeKit'in çektiği 10.0.0 sürümünde bilinen açık var (GHSA-846f-f764-76mx): yamalı sürüme sabitle. -->
