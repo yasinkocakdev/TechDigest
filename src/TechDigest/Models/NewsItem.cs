@@ -1,7 +1,8 @@
 namespace TechDigest.Models;
 
 /// <summary>
-/// Tek bir haber. RSS'ten okunur, sonraki adımlarda konu ve Türkçe özet eklenir.
+/// RSS'ten okunan tek bir haber. <see cref="Source"/> haberi yayınlayan kuruluştur
+/// (Google News için başlığın sonundaki yayıncı: "… - Reuters").
 /// </summary>
 public sealed record NewsItem(
     string Title,
@@ -10,5 +11,8 @@ public sealed record NewsItem(
     string Source,
     DateTimeOffset Published);
 
-/// <summary>sources.json içindeki bir satır.</summary>
-public sealed record FeedSource(string Name, string Url);
+/// <summary>sources.json içindeki bir satır. Publisher boşsa yayıncı başlıktan çıkarılır (Google News).</summary>
+public sealed record FeedSource(string Name, string Url, string? Publisher = null)
+{
+    public bool IsAggregator => string.IsNullOrWhiteSpace(Publisher);
+}

@@ -1,14 +1,16 @@
 [
-  { "name": "BBC Technology", "url": "https://feeds.bbci.co.uk/news/technology/rss.xml" },
-  { "name": "NYT Technology", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml" },
-  { "name": "CNBC Tech", "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html" },
-  { "name": "The Verge", "url": "https://www.theverge.com/rss/index.xml" },
-  { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
-  { "name": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index" },
-  { "name": "SCMP Tech", "url": "https://www.scmp.com/rss/36/feed" },
-  { "name": "NVIDIA Blog", "url": "https://blogs.nvidia.com/feed/" },
-  { "name": "OpenAI News", "url": "https://openai.com/news/rss.xml" },
+  { "name": "BBC Technology", "publisher": "BBC", "url": "https://feeds.bbci.co.uk/news/technology/rss.xml" },
+  { "name": "NYT Technology", "publisher": "The New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml" },
+  { "name": "CNBC Tech", "publisher": "CNBC", "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html" },
+  { "name": "The Verge", "publisher": "The Verge", "url": "https://www.theverge.com/rss/index.xml" },
+  { "name": "TechCrunch AI", "publisher": "TechCrunch", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
+  { "name": "Ars Technica", "publisher": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index" },
+  { "name": "SCMP Tech", "publisher": "South China Morning Post", "url": "https://www.scmp.com/rss/36/feed" },
+  { "name": "NVIDIA Blog", "publisher": "NVIDIA", "url": "https://blogs.nvidia.com/feed/" },
+  { "name": "OpenAI News", "publisher": "OpenAI", "url": "https://openai.com/news/rss.xml" },
   { "name": "Google News: AI", "url": "https://news.google.com/rss/search?q=Anthropic+OR+OpenAI+OR+%22AI+model%22+when:1d&hl=en-US&gl=US&ceid=US:en" },
   { "name": "Google News: Chips", "url": "https://news.google.com/rss/search?q=Nvidia+OR+TSMC+OR+Huawei+OR+%22chip+export%22+when:1d&hl=en-US&gl=US&ceid=US:en" },
-  { "name": "Google News: Big Tech", "url": "https://news.google.com/rss/search?q=Google+OR+Microsoft+OR+Apple+OR+Meta+OR+Nasdaq+tech+when:1d&hl=en-US&gl=US&ceid=US:en" }
+  { "name": "Google News: Big Tech", "url": "https://news.google.com/rss/search?q=Google+OR+Microsoft+OR+Apple+OR+Meta+OR+Nasdaq+tech+when:1d&hl=en-US&gl=US&ceid=US:en" },
+  { "name": "Google News: Developers", "url": "https://news.google.com/rss/search?q=GitHub+OR+%22open+source%22+OR+developers+OR+%22.NET%22+software+when:1d&hl=en-US&gl=US&ceid=US:en" },
+  { "name": "Google News: Security", "url": "https://news.google.com/rss/search?q=cyberattack+OR+ransomware+OR+%22data+breach%22+OR+vulnerability+when:1d&hl=en-US&gl=US&ceid=US:en" }
 ]

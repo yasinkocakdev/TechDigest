@@ -1,37 +1,55 @@
 {
-  "maxPerTopic": 5,
-  "maxTotal": 25,
-  "excludeKeywords": ["better buy", "should you buy", "stock to buy", "stocks to buy", "buy the dip", "on the dip", "price target", "gone too far", "motley fool", "seeking alpha", "zacks", "nasdaq:", "nyse:"],
+  "maxPerTopic": 4,
+  "maxTotal": 20,
+  "candidatesPerTopic": 6,
+  "maxCandidates": 30,
+  "excludePatterns": [
+    "better buy", "should you buy", "stock to buy", "stocks to buy", "buy the dip", "on the dip",
+    "price target", "gone too far", "top pick", "is it time to buy", "millionaire", "could make you",
+    "nasdaq:", "nyse:", "(nasdaq", "(nyse", "stock forecast", "price prediction", "sponsored", "deals on", "% off"
+  ],
   "topics": [
     {
+      "id": "ai",
       "name": "AI Companies & Models",
-      "emoji": "🤖",
-      "keywords": ["openai", "anthropic", "claude", "chatgpt", "gemini", "gpt", "deepmind", "xai", "grok", "mistral", "deepseek", "llm", "ai model", "artificial intelligence", "ipo", "funding round", "agi", "sam altman", "dario amodei"]
+      "color": "#7c3aed",
+      "strong": ["openai", "anthropic", "claude", "chatgpt", "gemini", "deepmind", "xai", "grok", "mistral", "deepseek", "llm", "llms", "ai model", "ai models", "artificial intelligence", "generative ai", "ai agent", "ai agents", "agi", "sam altman", "dario amodei", "demis hassabis", "superintelligence"],
+      "weak": ["ai", "chatbot", "chatbots", "model", "models", "startup", "funding", "ipo"]
     },
     {
+      "id": "chips",
       "name": "Chips & US–China",
-      "emoji": "🔌",
-      "keywords": ["nvidia", "jensen huang", "tsmc", "huawei", "semiconductor", "chip", "chips", "gpu", "export control", "export controls", "smic", "amd", "intel", "asml", "beijing", "china", "taiwan", "data center", "data centers"]
+      "color": "#0891b2",
+      "strong": ["nvidia", "jensen huang", "tsmc", "huawei", "semiconductor", "semiconductors", "chip", "chips", "chipmaker", "chipmakers", "gpu", "gpus", "export control", "export controls", "smic", "amd", "intel", "asml", "qualcomm", "broadcom", "data center", "data centers", "data centre", "data centres"],
+      "weak": ["china", "chinese", "beijing", "taiwan", "arm"]
     },
     {
+      "id": "markets",
       "name": "Markets & Big Tech",
-      "emoji": "📈",
-      "keywords": ["nasdaq", "stock", "stocks", "shares", "earnings", "valuation", "market cap", "sell-off", "investors", "apple", "microsoft", "alphabet", "google", "amazon", "meta", "tesla", "trillion"]
+      "color": "#16a34a",
+      "strong": ["nasdaq", "s&p 500", "stock", "stocks", "shares", "earnings", "valuation", "market cap", "market value", "sell-off", "selloff", "investors", "wall street", "trillion", "quarterly results"],
+      "weak": ["apple", "microsoft", "alphabet", "google", "amazon", "meta", "tesla", "revenue", "profit", "ipo"]
     },
     {
+      "id": "software",
       "name": "Software & Developers",
-      "emoji": "💻",
-      "keywords": ["github", ".net", "c#", "open source", "open-source", "developer", "developers", "programming", "coding", "software", "linux", "windows", "copilot", "cursor", "api"]
+      "color": "#2563eb",
+      "strong": ["github", ".net", "c#", "open source", "open-source", "developer", "developers", "programming", "programmers", "coding", "software engineer", "software engineers", "linux", "visual studio", "vs code", "typescript", "python", "rust", "javascript", "copilot", "cursor", "ios", "android", "macos", "windows 11", "app store", "browser", "chrome", "firefox"],
+      "weak": ["software", "app", "apps", "update", "microsoft", "apple", "google", "windows"]
     },
     {
+      "id": "security",
       "name": "Security",
-      "emoji": "🛡️",
-      "keywords": ["breach", "hack", "hacked", "hackers", "ransomware", "vulnerability", "cyberattack", "cybersecurity", "cyber-security", "malware", "zero-day", "outage"]
+      "color": "#dc2626",
+      "strong": ["breach", "data breach", "hack", "hacked", "hacker", "hackers", "ransomware", "vulnerability", "vulnerabilities", "cyberattack", "cyberattacks", "cyber attack", "cybersecurity", "cyber-security", "malware", "zero-day", "phishing", "spyware", "exploit", "exploited"],
+      "weak": ["outage", "outages", "security", "privacy", "leak", "leaked"]
     },
     {
+      "id": "policy",
       "name": "Regulation & Policy",
-      "emoji": "⚖️",
-      "keywords": ["regulation", "regulators", "ai act", "antitrust", "lawsuit", "ban", "banned", "congress", "white house", "trump", "eu", "european commission", "ftc", "doj", "tariff", "tariffs", "court"]
+      "color": "#d97706",
+      "strong": ["regulation", "regulations", "regulator", "regulators", "ai act", "antitrust", "lawsuit", "sued", "sues", "european commission", "ftc", "doj", "department of justice", "sec", "fcc", "congress", "senate", "executive order", "tariff", "tariffs", "ban", "banned", "bans", "white house", "court", "judge", "legislation"],
+      "weak": ["trump", "eu", "government", "policy", "law", "lawmakers"]
     }
   ]
 }

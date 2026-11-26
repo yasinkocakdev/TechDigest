@@ -1,0 +1,22 @@
+{
+  "top": [
+    "Reuters", "Bloomberg", "Financial Times", "The Wall Street Journal", "WSJ", "Associated Press", "AP News", "AP",
+    "The New York Times", "New York Times", "BBC", "The Economist", "Nikkei Asia", "The Washington Post"
+  ],
+  "trusted": [
+    "CNBC", "The Verge", "TechCrunch", "Ars Technica", "Wired", "The Information", "Axios", "Politico", "The Guardian",
+    "CNN", "NPR", "Fortune", "Business Insider", "South China Morning Post", "SCMP", "MIT Technology Review",
+    "Engadget", "The Register", "Semafor", "Al Jazeera", "Bloomberg Law", "Rest of World", "404 Media", "Platformer",
+    "NVIDIA", "OpenAI", "Google", "Anthropic", "Microsoft", "Tom's Hardware", "AnandTech", "The Atlantic"
+  ],
+  "low": [
+    "Benzinga", "Yahoo Finance", "Investing.com", "Barchart", "24/7 Wall St.", "GuruFocus", "FXStreet", "Finbold",
+    "PPC Land", "Analytics Insight", "Techstory", "Coinpedia", "The Economic Times", "Times of India", "Blockonomi",
+    "Digital Journal", "OpenPR", "EIN Presswire", "PR Newswire", "GlobeNewswire", "Business Wire", "Quartr", "MSN"
+  ],
+  "blocked": [
+    "The Motley Fool", "Motley Fool", "Seeking Alpha", "Zacks", "Zacks Investment Research", "MarketBeat",
+    "Insider Monkey", "Simply Wall St", "Simply Wall St.", "TipRanks", "InvestorPlace", "AInvest", "Stocktwits",
+    "Nasdaq", "Kiplinger"
+  ]
+}
