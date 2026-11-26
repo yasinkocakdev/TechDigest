@@ -1,0 +1,636 @@
+{
+  "version": 1,
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T20:38:48.2771388+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "stats": {
+    "fetched": 472,
+    "stories": 20,
+    "sources": 96,
+    "feeds": 14,
+    "feedsFailed": 0
+  },
+  "headline": {
+    "title": "FIFA Says Hackers Accessed Personal Data in Cyberattack",
+    "tr": "FIFA, geçirdiği siber saldırı sonucunda kişisel verilere korsanların eriştiğini açıkladı. Bu gelişme, federasyonun veri güvenliği ve gizlilik önlemleri açısından önem taşımaktadır.",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWlFyR1RsWjEyejFRdXlWSVN4QXphaEE0dFp6R1FyaWJNLVBIUVFKc09kcGh3Q2xaV0VOdDRpWTRZVFBlLVoxVEtmV3cxclpNaE9BZU02ZXZaSWhJbnlCWVBWN2VseXdjUVowaW9nSWRqRjhMRWI2NXh0TWV3b1NkNE1nQkxmVnozRFZBbVNVT3hKS0ZpSHVuWmhfTEh4S25FdG9Md0o1OVU4UQ?oc=5",
+    "source": "Bloomberg",
+    "published": "2026-11-26T13:42:17+00:00",
+    "topic": "security",
+    "coverage": 40,
+    "score": 36.3,
+    "related": [
+      {
+        "source": "Mashable",
+        "title": "FIFA confirms cyberattack that accessed personal and ​business information",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52MjhQRnBqaEVWSUVpdmJFSl9BX3NiSkVRNmpLTjlhODFfVTktNHNrQnByZTJhWFpiaTRNY0lzSXRwX0RsaDg3Wm5YVDUtak5hcUdFM1BrZHR6SDZPeHktZ1B3?oc=5"
+      },
+      {
+        "source": "ABC7 New York",
+        "title": "FIFA says it has been victim of a cyberattack accessing 'personal and business information'",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUTV5VS03eHdPS1FIR2ZxTk0xQkhEcGdPbWZUNjYyNHB1ZTY0N0V4NTlKQ3p0QlZkZEQydzdPQ2d4ZF9XNVdxenpkbTdHdkVzemxJTVp5Sjk4UDJ0UDNPb18xWkJrQWczeE5wYS02SGMyUEllMHdLdXNEZk1ndW9iSXpjN2tpdWdiR05rSjJoR1dVSHdndUFzOUI0TWtGcHF2aFByQ011NVZscXNoZG54Wng1ZEhXZ9IBtgFBVV95cUxPUTV5VS03eHdPS1FIR2ZxTk0xQkhEcGdPbWZUNjYyNHB1ZTY0N0V4NTlKQ3p0QlZkZEQydzdPQ2d4ZF9XNVdxenpkbTdHdkVzemxJTVp5Sjk4UDJ0UDNPb18xWkJrQWczeE5wYS02SGMyUEllMHdLdXNEZk1ndW9iSXpjN2tpdWdiR05rSjJoR1dVSHdndUFzOUI0TWtGcHF2aFByQ011NVZscXNoZG54Wng1ZEhXZw?oc=5"
+      },
+      {
+        "source": "The Eastleigh Voice",
+        "title": "FIFA confirms cyberattack as hackers breach systems and expose sensitive personal and business data",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQU3Y4YjhGdzFEVlJSR3hKWmxWQVpod0VoWWdwbEtKN0hnTlljMGV6RlAtcU1EUUJpeDB3c1NOMG5saFNjUlpSYkZYdkpGTWtNQWFtS1pXS3B6eUQycEpXLTdkQXVLcmw3T0RDTHUwVzlDdHgyVTc2N3JPd20zbG9RNkpIaThCRk1PS0lzRk1ta0ptRTByTUJ3aXJXX1pxMlNsWnNTUUdJNlZvZnAxZlRvaHg4ajYtaEswQ09ydUdRQ1lUaFlHTFdzY2YzX2JvRXFrd0VMTjE0WjdRTFJS?oc=5"
+      },
+      {
+        "source": "GBC Ghana Online",
+        "title": "FIFA hit by cyberattack as hackers access ‘personal and business information’",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQk1DMV9XV0puaGhtdU40Z1hlRWNwVFdqeWJGRFR4UzJUU0RxMmlCUERMMVI2eXIycWZWYU1mX0s4YTdHMXR6ZXRJZkVlekRGbGR1SHk5X01Nd28tWWI5TU0tU0FOelVGR3B1SkRNNTIycVhoTDRrSDVuY0ZQcHVOMnNUTnZFNTc1T1NTUmpLQU9TTnBUNkExR0lWQTdpNzFydFh6NXB2OUc4T184Z1plaXFDenVId2toUC1N?oc=5"
+      },
+      {
+        "source": "DW",
+        "title": "FIFA says a cyberattack against it targeted a 'limited set of personal and business information'",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQR2JOSndzZmZGVEhjRmU5U2lUcWxDaXZacVVqWmp6WW90c0JHSUp0UUs5X09vSWpBZGVaQkhxU3kyRXVyZkZiNjN0dDFNUUlfemloTDdCbGNJY1htemFkWjFOREtDQWFQbkdBODZPMm4wNXZsakRaMDFZd0RPRmh0bUFrdzNIdzJ4WXZpTElLN3B5RmJfVFYyTFJta0g1WHZZY0NLNnh2NkJUMlc4b2tLZ2J2ZXZrUDYwMUxuRFFOanNTcTlaV3fSAcYBQVVfeXFMTXhqVDRVWHY1VWxfR1FZeFBrMGp1ZFhQTUVCcmVtVHdWcEh0LXE1U0x3cGlPdTBCRXROOTZhNWNFY2QtTFVJN1U2eWQtR05wZHJFVTFuSFRLN3JQOGczUUY4ekZ2aWk3UTNkejBlTXlQZnBJcUUxcGc3YXpQQVFxRWJHQVRSdUZEa3NsbzBZSmlteGg2UkVZejFsQWFSdVQyNGZBZVQ3cjRqdUJkMGtRd2ZrU3lXQUg5Wk5vZTY2eEI3WFhjaE1B?oc=5"
+      },
+      {
+        "source": "Beinsure",
+        "title": "FIFA cyberattack exposes personal and business data as hackers claim 12GB theft",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5LcUoxdTBad0NPLVlRMVhQcnpwdk5nYWVaeVZBY2hCdWNpdWp3U3YtRldNNndJM2lURmZQNnl6cHNtYWpfMGVrU0NCZDhPV2J3WGhrcUFJQlZFX3JhRnhDUEFkUHVadDExV3pqUWlGZTVYZE9CQ1IyeUdqa1JRelk?oc=5"
+      },
+      {
+        "source": "TRT Afrika",
+        "title": "FIFA confirms cyberattack as hackers claim theft of sensitive data: Report",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9OWFcxLTdLNXRKbkFBTG51LTJTYXNFV0NYYzZ0dmw4QWdsT0xfVWY4U0dQQVpxTTFIRlFHQkNaQWp0NWNWdm96NUYtQXR1akhjMld4V1ZYYjNhS21ORVU1b1BhLU4?oc=5"
+      },
+      {
+        "source": "USA Today",
+        "title": "FIFA confirms cyberattack that stole 'personal and business' data",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSzMtZkNlUk9RTHRUYzQ4a2N4Vk5fYXViRkthTE1HTUYtMW9BV0xIUU9jMFJsMEo0RG82X3FTdVVYQm5SWkVVclE4djJOYWZ2OHJZZElSQ0FJdUd6UjUwVVBodTBZNF9kU2pDTkRld2VQZS14eXRNS0NWWHRRVGNLd1V5bHd5dm91NWZuYWwtelFfc0JCMElpeGZTRHloQnByN0xVVkxETFRWcnZC?oc=5"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "ai",
+      "name": "AI Companies & Models",
+      "color": "#7c3aed",
+      "stories": [
+        {
+          "title": "EXCLUSIVE: US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
+          "tr": "Kaynaklara göre ABD çip kısıtlamaları ve damıtma baskısı, Çin'in yapay zeka modeli geliştirme süreçlerini tehdit ediyor. Bu kısıtlamalar küresel teknoloji rekabetini doğrudan etkilemektedir.",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSHo5VjlHR1l4UkdCSmFGNUd6WVlZNXlwZXl6Yk5oYUFnTm9ISC1ZSWdmbi1aZ3R1b1Q3bXhpaXVoSXRaNy1hcWdSWHdCd2RFVGx6WlhYN25pZXI4Q2xHWGpQVkJYN2MwTk1ma2NERnBKTHhBUXpHSElLeFdwdEpVZFZZcWhxMm1QUEVpeHRYSXczYXNJelJTUWtHdEkxSGpud2NxeV90R0VjTXVkTmE4U0JRZWVRM1RFUmt3UGhIbw?oc=5",
+          "source": "Reuters",
+          "published": "2026-11-26T07:19:00+00:00",
+          "topic": "ai",
+          "coverage": 3,
+          "score": 17.3,
+          "related": [
+            {
+              "source": "Taipei Times",
+              "title": "US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5aNjQ3Q0FpX08xODhRZzNieDd1LXUyMmwwRnM1N1RXRXpoekExNTJhQjN0cEFwYlpxSVpKYmM2TWpSTW45YmFaYVNOYzJoZS1pR1NlSWNhNVBWNXU3NDI2bkNuSVZ0Z1ZTV0V1OEh5QXk5ZFU1clE?oc=5"
+            },
+            {
+              "source": "Yahoo! Finance Canada",
+              "title": "Exclusive-US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcl84eXpvcnl2T25WZlNSNUM4MVJkcGdjZEx3UFJPVGdXZ0NrX1NGOFQtRlZ1ZWJIVGVoZVVPRTZyWjZsX2FzOUtkeUxkTGUtWEhKX3lrRXJQSHctVy1RZzl2NUZjR2Q2aHo1VjFpRGJaTFlvZjFITUt3eUkwcDFEZkR3aU03NW9xVUh5RU5B?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Anthropic CEO Amodei denies wanting humanity to ‘surrender’ free will to AI",
+          "tr": "Anthropic CEO'su Amodei, insanlığın özgür iradesini yapay zekaya teslim etmesini istemediğini belirtti. Bu açıklama, yapay zeka etiği ve geleceği hakkındaki tartışmalar açısından önem taşımaktadır.",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNU1lFeWR4WThickRrRFF1RS1jOWdOdXNxUDRqZkJQQjhHMnVsZjR4QTN3emM2YlRkcnlrbVFrVl9TUmNJdm9EZXZTTDh0MmZxSzc5Z2hZSjRZMndpU2RuZTlIRXU1WWxlTFZJOXVQTFc2QVRyYWpfc04xN2tDZDZkdERhVjdGaV9lblV0U0x0SHVmYzF5WFkxOC1UODkyaDhoNFF2MWtUSWt0TC0zZVVBWi1TU2Y2TXkzMEHSAb8BQVVfeXFMTXlRMjR0aXQxNjU5emprZTUtUVBYTlZjUlJVQ3NfV1NOY2V0V004bjdhZjJzaU96akpVNmtaaHpUcC1LazBYdE85ZVlSQW95bnBHQS1qTWdlcUlyMENxUmlIVDVydWdyVnZjX2xGRlRPSGxaS0NDeldfdUxHOUNsN0x3YUNQZjJBSGZEY1V0Vm1EQWNtMmlQMnVNQjE3cnhFRktibnF4MnVzaFVQT2EzeldXaHk0WWRvRm8yTlJBd2c?oc=5",
+          "source": "Al Jazeera",
+          "published": "2026-11-26T06:30:12+00:00",
+          "topic": "ai",
+          "coverage": 4,
+          "score": 16,
+          "related": [
+            {
+              "source": "Euronews",
+              "title": "Anthropic chief denies wanting humans to 'surrender' free will to AI",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUWZXazNFQkxXY3lMQ05iSmxNSDR3Y29ORVZhT1podjJLNmRMZlRHLTI4cmVTNk5WWnNJcVlqT1JkeW5WcE04UTBMUkVIQkJZWHpXMnN2V2tVblNYNFk5M0FUUXl1STZZd1d0NkRJU0NWWUw0VXMtM09RS1g3S1hSYmktckZtRUhjTkJUd2ZOZGFtY1BtTG5fTzY0NjJxRUl6emxfZA?oc=5"
+            },
+            {
+              "source": "Howl.Link",
+              "title": "Anthropic chief says claims that he wants humans to ‘surrender’ to AI are ‘absurd’",
+              "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9RemVTT3dkQjlFSGxRUWt2RGRaUGVWN2VRWExSTTdFSE1VYmVIYS1rSUl5RU14eVhxRnJF?oc=5"
+            },
+            {
+              "source": "The Next Web",
+              "title": "Amodei says he does not want to ‘surrender human free will’ to AI",
+              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNHM0SnFvc3Y0YlpaWGlxZWNqQUpWaUVjSE5Xc1hZUEs3WWJ6WFRHbmdPcU83enBUclRQdjNXeC1rN25UamE1MXRUSWJUT1h3dXlOYl8zRlM4OTB5ZW9obTVfU1lraEtkNFB3UEljamdmNnBjd0RzV2ZRNTk3ZEZLelViUURJZw?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "OpenAI's pricing mix-up means most users of its new AI models will hit limits faster",
+          "tr": "OpenAI'ın fiyatlandırma karışıklığı, yeni yapay zeka modelleri kullanıcılarının sınırlamalara daha hızlı takılacağı anlamına geliyor. Bu durum kullanıcı deneyimini ve erişilebilirliği doğrudan etkilemektedir.",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcGJiZ0ZrLTJYSmZ3d25GeGNZaVpMX3RyRmNtLTctdGUtZGpkVHVOQXJDWGlBdnVhNVhtVGdRTW9qUTg3dWFyeDRZQ3VsQTRzdjJzaHNGNmpYdGV4SWFGS0JyTF9QRWZIWld6WFZXVFV0YjJtZmtmWVRjMDNHT2lqVlIyUTBaRGFjb2dIUVMwWlBuSzJLdkFv?oc=5",
+          "source": "Business Insider",
+          "published": "2026-11-26T13:15:00+00:00",
+          "topic": "ai",
+          "coverage": 2,
+          "score": 15,
+          "related": [
+            {
+              "source": "Business Insider Africa",
+              "title": "OpenAI's pricing mix-up means most users of its new AI models will hit limits faster",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOSUlldXJDS1lMbC1nXzlLbUg0TC1IM0lNblk4cm9zQmZpZnhoY2xiUzVXekhfMkh0WUFsMXFDQXJvSTlnNHZFcmYzSEcwdGE4c2lwLXpzSERWaE40dXZITExjS2c3SFl1RlZEMmZhU3laQzBWOC0wMEtYd3VGMTZvNXQ3ekpvUkFMamFUbnBWMFR0UE5fSG5kVHhmYlQ2Z1hzYW8xQXR1bkxaenl0TXdMbWZYVjhPQXctenUyNDB1T2FZTy12bi1oZkc5OA?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Anthropic Claude Ship: GitHub AI Code Reviews, Fixes, and Approvals",
+          "tr": "Anthropic Claude Ship, GitHub üzerinde yapay zeka destekli kod incelemeleri, düzeltmeler ve onaylar sunuyor. Bu araç yazılım geliştiricilerin iş akışını hızlandırmayı hedeflemektedir.",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbzZmVHNueXZlYVlWR3kySVdJTkptRkVsTDR2dmxGV3l4ejdpbjBlLVR1cTVkS1RVbXhQSEVyX3NFX0ZkYmU1Y2VTQ1lCYXlYTU5LaVZlUmxZcmVlZ3p0N0FZY2Z1RzdfY1J6Y3MxODg1eVBTN09QUnUtTHNXLU5pTl9xVkZJWXZYMk13bFd3?oc=5",
+          "source": "TechRepublic",
+          "published": "2026-11-26T19:09:39+00:00",
+          "topic": "ai",
+          "coverage": 2,
+          "score": 13,
+          "related": [
+            {
+              "source": "Tech Edition",
+              "title": "Anthropic introduces Claude Ship to automate code reviews and software fixes",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV1g0dlZfd0hKQXFmU3VQVDcxeU9HX0NGQUh1b3JqQTQ1NUFiS3FGRFoyY0Y0TlpuSnpqUVQ5NkRua1MyX09vdkJYZjlfV3UzVExLai12VTNFc1R0dEhZTGNudDRZOTVjeTBDZDZqTFJUbnl5a2Y5WURVSTZIMXdTQWpVaGJmdFZlcEZtSlNlV2xPUjlTckZNVEtfMk1zYktTSmc?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chips",
+      "name": "Chips & US–China",
+      "color": "#0891b2",
+      "stories": [
+        {
+          "title": "Nvidia Halts Sales to Southeast Asia as U.S. Tightens China Restrictions",
+          "summary": "The shipping halt, which hit four countries, follows a new U.S. rule that would require licenses for companies in the countries to buy advanced A.I. chips.",
+          "tr": "Nvidia, ABD'nin Çin kısıtlamalarını sıkılaştırmasıyla Güneydoğu Asya'ya satışlarını durdurdu. Bu karar, yeni ABD kuralının ileri düzey yapay zeka çipi alımları için lisans zorunluluğu getirmesinin ardından alındı.",
+          "url": "https://www.nytimes.com/2026/11/26/business/nvidia-southeast-asia-sales.html",
+          "source": "The New York Times",
+          "published": "2026-11-26T12:04:01+00:00",
+          "topic": "chips",
+          "coverage": 14,
+          "score": 30.2,
+          "related": [
+            {
+              "source": "WSJ",
+              "title": "Nvidia Tells Partners to Pause Shipments to Southeast Asia",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMGFER2Vpbl9JMXo5TFF1MFdQemdLcWFENFE0eGhwRS1pWkVyVTJvMFQ3RnRxUURGSjBxbHVMVVlyYzk0N3ZVU0tfb0tJa3NJREFmSzNmbkVWd0xxdDlvLUlqNzQ1bnBmUExWNWxmVTczRG1UNEQzd3NReXh5N2xTU3IwbkRwcDJFT1BXYzExU3NLMVNkZ3RR?oc=5"
+            },
+            {
+              "source": "TechCrunch",
+              "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+              "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+            },
+            {
+              "source": "Engadget",
+              "title": "NVIDIA Reportedly Halts AI Chip Shipments To Southeast Asia",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPY0M2ckFncU1tMHdoOUZjN29SeDlkd2JXZkk2TkRWYUNoVmtHdlBLT3Z2Q3R3NnlkeVE0cnNhM250TmtSWFl1bXRBWEk5eGpxbzlUZmdGRUZKRktaakxTaHUtY2JMVnhCZnBPMGpoNloyR3RreDZCVC1FMkMyWXI2b1dQRGpGSF9pZUdaRkZ0UWgzczh1?oc=5"
+            },
+            {
+              "source": "Tom's Hardware",
+              "title": "Nvidia stops AI GPU shipments to Southeast Asia amid purported China cloud access ban, report claims — data centers in Singapore, other countries, in trouble as Commerce Department requires cloud providers to obtain export license",
+              "url": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxPdGpodGZZZkhBY0lBaUZWMkM4QTFrYmJSaHM0ZVRKX2RtYW5UcE5EeERHbHBSZ1QwY0xUaGIybEcxY2pFU0J3dXQtV1lXWkRFbHZOOGFha1hiOEJyb18xb0tjV3NadDR0c015SjdvZ2VvVXJPN1BrSDJsZm9OWWtBSkFpN0g1R0RYRFB6bXJZS0hQVUl6TXdNSDVKa2lVSlJfYUtkLUVRWlVLLWx6MEdkN2FpSUVqeU5zSHVyeUV3Q3RhRGFXZ2lMZnFOSlg1ZzFUdmRiTVhPUk9ZM1EwMzBjWU0zV3k2bzNOZ21sQnE5NkFaODNISE41Q1BfMWwxNUtWbWFXZmNYQjQyYVdXaXI0cDdvcVIwMjV0T2Y2N3l4b09ST0NLbnM0ZnVsbXNsY3hmSWV4bldvT0VMUXg0MTEyZDV6NXNFTkpEQVJiQlhKYWxXeDNwQlNSbg?oc=5"
+            },
+            {
+              "source": "Washington Examiner",
+              "title": "Nvidia reportedly stops shipments to four Southeast Asian countries",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPT1NBeWh6TXd2MzZiczFwQ3VsZG50QzBseEd2cUFOeEpqVkNod3hxZTU4bld5dFNlTl8zZEdQTmd5S21hLWFVb3RKZDVYRXg2dnJ3Q1p3U1NqdHIyME5TYjJPTjhKd05jRmw0VGZiZ2lacGtZMzZkOHM5b3dOajlWNGpvY1NPaFZ0UUJFQkJGemdiYUNMMHQ0b2FPWG1nTVNwRHBzUXZEVGtCNmRxbGhPZWJyQXVweWNSR0g0Z2xScnB5SWxVZGV0bw?oc=5"
+            },
+            {
+              "source": "Investing News Network",
+              "title": "Nvidia Pauses Advanced Chip Orders in Southeast Asia",
+              "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TSEJuajdiT01OOU1kaEFxam54MDA5ZHB6Z1NEdEJHb3hrUGt0QzN3b3hSUGVycTNJMlZBMVJkOVRRd2NERndoQUtfLVl6MDVvVGFGLVAwSDg3NGhJRmFSQ0NMLXY0QnBJN2M0Yw?oc=5"
+            },
+            {
+              "source": "Gizmodo",
+              "title": "Nvidia Reportedly Freezes AI Chip Shipments to Southeast Asian Countries",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdUh3MXpvTENyanZLczZzd29RNVFPTDh4aHVvcVA5OHNOREd1WWQtdk85YU9jbElGRllubnN6c1poTWRtQ2JoMk83Q2xKWWg5YzIxQmY5LTVXVkZXRFFSWS1QUUVmQUxLTzhzU0hqeWFSY193akwtR0ZRVTFTUG9YNXdzQ0NmM3BGUjNoeHpLVlBfRnliSXpUM2hWaG1xajB2MGZjZklB?oc=5"
+            },
+            {
+              "source": "Barron's",
+              "title": "Nvidia Halts Server Shipments to Southeast Asia, Says Report. The Stock Can’t Catch a Break.",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQenZwTC1tbVoyVFBCQVY5MlpGa296SzNNUGpXT195Z19tamNhMGx5RFk0OHhKcEVpa0RGTnFWYjd2UWIwUFZOY295RUhaWkNrMUNET1I5cUUxLW4zejJRUjE2TkNma1ZjcnpucDJFeHNXNkp6S2E4VGFRNzl3WXBWZUVFNG1kcy1k?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Jensen Huang Is Back, and So Is His Plaque at Denny’s",
+          "summary": "The chain said it had restored a plaque honoring Mr. Huang above a booth in San Jose, Calif., after he was reinstated at Nvidia, the company he is said to have co-founded while eating there.",
+          "tr": "San Jose'deki bir Denny's şubesi, Nvidia CEO'su Jensen Huang'ın şirkete yeniden dönmesiyle birlikte onun adına hazırlanan anı plakasını yerine geri koydu. Bu sembolik olay, Huang'ın kariyer kökenlerine dikkat çekmesi açısından ilgi çekicidir.",
+          "url": "https://www.nytimes.com/2026/11/26/business/dennys-jensen-huang-nvidia-plaque.html",
+          "source": "The New York Times",
+          "published": "2026-11-26T19:16:47+00:00",
+          "topic": "chips",
+          "coverage": 13,
+          "score": 26.8,
+          "related": [
+            {
+              "source": "Politico",
+              "title": "Denny's brings back plaque celebrating Nvidia chief Jensen Huang",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRmVBTi1nckNpeUFQb1RoU0NTbWt1MVVYSVdZNjhueVI4NHZuT05hSmJ4MmVWSjNoUi01cVAzNnQ5Vl84d0FOOTV0aW5xOXcwODFra085b1MyS3gzOExyRnFzSk9Dc1M0ZTE2WnlReFZmSmlVVWZjenZDQzhpZUQyNHVOSVlzMmpFYUwyMm8xQ3lxdXdNNVZrdGRRTFd4ZlB0SEZvRDg5N3Eycks5LTdtcGlaWEM?oc=5"
+            },
+            {
+              "source": "The Press Democrat",
+              "title": "Jensen Huang is back, and so is his plaque at San Jose Denny’s",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWTh6YnRlTmZIZkhtM1RlbUlsd1BuMEJITEJOcDhoVWpJTnpITUFKSENYYXlWT25RRWpaOVJLNFVlNjE4alNyYVhoV2lWSkN4bzl1ZlV2c0ZRbVVSSGN3cFJNd3NWbnlzZ3hhVW15ZDNPa1pXSF9sdU9nUWg4aTg5T05LWDlQN3R6aEdwT2xzeDhBS0V5ejBwOA?oc=5"
+            },
+            {
+              "source": "Facebook",
+              "title": "Denny's gushed over Nvidia CEO Jensen Huang, confirming a booth plaque honoring him and the company is back up after his temporary ouster.",
+              "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOc2hTOTJiWXg2d3pPZlBxVFpuRWJHZWpBd01hUVkycEtRbEc1bWVsU1dsUUgySWRWamdZY1NDcEFqYmVxbUxmOFV6cmVXTlVqUmpnT0JXbW5XMGJVelBlNzg4ekFSSFJEQkdaMXNZQ3Vld2M1aF92aDBVRG5OWDQ4NHhEXzU1ZklqYWRtdGQyRGhKMEd6WWdTRktRWEVnMmhKeFczelphMWZRVVl4NHNUSlFZeGgtX0tQYlFFRVJHRVZUMjU2YW1oQ2NlZktfYlZGRWRwQWVYQVE5dnVLQ2FV?oc=5"
+            },
+            {
+              "source": "The American Bazaar",
+              "title": "Denny’s celebrates Nvidia CEO Jensen Huang’s return",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMTFYVTVKTnFRcDhMX0tsMXFyNW4wV0s3cWtNbVBjMXZwYnpXc2NzYjdxX011SE1vVjN2bDhWdU51REJLZDlYNmxXaTFYQjlsVHE4QWZJRWw3Rng1aHpEQWhIY041T3kyLVpseWlpRnRxUFF5UHI3cWd1Um9GNFAtalpLRXAyb0pmMzczTDhGU2hhc3FOU1RIT0p5SEdlQTdUank0?oc=5"
+            },
+            {
+              "source": "USA Today",
+              "title": "Denny's praises Nvidia CEO Jensen Huang, confirms booth plaque back up",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWlVvYVh2N0x2S0ZOb1haZEVOUE5RSEVBTDl6TDdoY0lnMXRpQjJlMUhQTVhVUXRBeGpyZTh1NFNoTzlwMUNmNXVhZ3Z1QVZia3ZkSkVjalh4X0labEUzQ2FiZGJiT0tRZ2p6UWNYc0otX0tUMHJCaDgxM0VCdEJpbDZsRDlaMEhhblpMOWpzMENZR0oxbFBJZlJ3?oc=5"
+            },
+            {
+              "source": "The Hill",
+              "title": "Denny’s celebrates Jensen Huang return to Nvidia: ‘Your booth is waiting’",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaFcyX3Z0TExTYUprSEZLS1pKaDNuWlJqUk1mNEV3Qy1YaWNpa0lJcVZWamtFbFpGcnFtYTJTWW1CZWlXTGJha3kwV1JjSjNybUt0T2cyRHUwamVyZHNkSnZWMzk2YVo2QTJnelB5N1BmVVg3d3lFd25UbEZIRk5Fb0Y0VVVRYVMxZUhPNDYxNXhOQk1wempnc1RaNVhLZDAyRkJtZ0Jn0gGrAUFVX3lxTFBRQ3B6THNjNzJheVVxemFYbVBUazM0NVZnRDFydW5OdXBlTmJBWlhjSFhkNW9vYnpJQ1VnMWltZVlUUExXTUdaNEtCQjhDNnlVSi1VZEY3dkFvcWY4R1lydVdHN1dfNnZxLUxRczQ0MGhHcVozeGs1UjhzNXQ3d1A4UHBsLU1sX3d2aGN1M0tFa2U5SVRnaTZHX2tDZTh5N0NoNUFTNkxNWlpfYw?oc=5"
+            },
+            {
+              "source": "New York Post",
+              "title": "Denny’s faces heat over gushy tribute to Nvidia CEO Jensen Huang: 'Just put the pancakes on bro'",
+              "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNnFYdFAteFhkV1FxelFTMHBTbzdGRGZqeEFxUm9jejVQTllqMEJ4TEV0UGstZXVid29CSkJEb3dRMHpDSkNyU2h1bzJpU0xyT25hM0hfVUlaSFVNY25XQmlhTEM1WkU2aE9IQll0bzRWdlprM1A0YVZtTHFpVVBOWGczVlM4cjA2Y0NlMURRWUlMT1ZONktJeXQzYUU4ekJINExvNmlxRnVZeFFvZUlzRWFxd1lLbVZzQTdmYklCbFVHYm42WFpldmJYVQ?oc=5"
+            },
+            {
+              "source": "CNBC",
+              "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
+              "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html"
+            }
+          ]
+        },
+        {
+          "title": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
+          "summary": "A new BIS rule was intended to close \"loopholes,\" U.S. Trade Representative Jamieson Greer told CNBC's \"Squawk Box\" on Wednesday.",
+          "tr": "Kaynaklara göre Nvidia çip alıcılarına, GPU satın alabilmek için Çinli kiracıları hariç tutmaları söylendi. Yeni BIS kuralı, ihracat kontrollerindeki boşlukları kapatmayı amaçlamaktadır.",
+          "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
+          "source": "CNBC",
+          "published": "2026-11-26T17:04:54+00:00",
+          "topic": "chips",
+          "coverage": 2,
+          "score": 17,
+          "related": [
+            {
+              "source": "CNBC",
+              "title": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
+              "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ydHdQWUpYRU16SjgyRXBibzZ6UFN4RThEMUV3VkRJV0NCNmk1Nm1wTFlvTnpsLS1VVHdmczlIQjZRN0RKZnlBdm5oSmFUY0lCaWV5dTY2bDBiRHcyV0lfMjk3ZS1TQW1oM3F0TTJFRdIBdEFVX3lxTE1hb0dnX1V6U3RzcVduQUhNcHBONFFMMVVaaThOcEc5dy1EOVMwUXBVM1lSMWljNm12aTJXT0FvMWdkaUdyTEZyZGY0dHJ0R3kxQllKQ2RaMl9MYmxIY2pHcTh6TWVDRkhCSkVqUVUtbVFOam81?oc=5"
+            },
+            {
+              "source": "Tom's Hardware",
+              "title": "Two Californian Nvidia AI chip customers are really Chinese-owned — companies used as workaround for government export controls",
+              "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQMnZuLWtQbHUzczNDS29VTDBUcTltQjdzQ0ZpMFZhOWtfWV9DbTZvNWFGVTk0Z0NCYVNyU3NPY0tORGlzTjhBejh3N3dBbEpkSkdULUVWM1ktcU81N2ZhZ0MtWnRsNG9PLTdLT0hlcFQyV3I4US04NEp0d2NSRGpURlZZMGRYTmlaYXZzTlFfN1JYcDgzV1hkb1FDN3VnWDAxLUxOb3hVVVNaSi10V2tqbFN3dnlBOVZjLU0yTFVHRktZbFFxRy1Bbm9JcnBOam12R0NhX0M4RGlNTVV6cWhxMDNLRl9mRXVCYzhwYnRfS3JMdTI3a0NfXzBDTWtZYV9pMm1YWXRRTGs?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Huawei Teases Next-Gen AI Memory Chip to Take On Samsung, Hynix",
+          "tr": "Huawei, Samsung ve Hynix'e rakip olmak amacıyla yeni nesil yapay zeka bellek çipini tanıttı. Bu hamle, bellek çipi pazarındaki rekabetin kızışacağını göstermektedir.",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOM1BOZHJ2d0E5MXN6cVhHTVdoQm43SHlaMmJsMXlsQVJVeEtEbFVla3B4WHF0clJJV3BmNXctM2Y1SWFEU0ZkZ09FZ2hXcElpb1pqbGxaLXNZQ0djb1F4VFpBVFg3YXNFRzBLWFpmVEMwUzNVMF9XNXI1dUU4ZnBiME5Hb0VWdXlxYnRSNXJTbkZGT1U2Y1hDSV9yT25rT3haSVZVWWl1dG5WUDhRQmJOakRFdw?oc=5",
+          "source": "Bloomberg",
+          "published": "2026-11-26T04:06:00+00:00",
+          "topic": "chips",
+          "coverage": 2,
+          "score": 16,
+          "related": [
+            {
+              "source": "The Next Web",
+              "title": "Huawei teases an AI memory chip to take on Samsung and SK Hynix",
+              "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwcGtZdVZ6bFRmNmFORXdjeWthNTlYblFHdnN6Vm13MFZhMzFiZl84eTlvdzhVRzZ0aGU0WlRLNkRwam5NSXVCQ205QU11WURJSVJnWFVBSDJaSE1mZVFXeExIbW5DeXhCVWlUS0p5YWNqY0p5MHM1dzNEaw?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "markets",
+      "name": "Markets & Big Tech",
+      "color": "#16a34a",
+      "stories": [
+        {
+          "title": "Watch Nasdaq 100 Bounces Off Tech-Driven Lows",
+          "tr": "Nasdaq 100 endeksi, teknoloji odaklı en düşük seviyelerden toparlanma gösterdi. Bu hareket, piyasalardaki teknoloji hisselerinin yönü açısından yakından takip edilmektedir.",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZ09IZldZQVUwZHNnX0RVOVZhY29DNW1vY2tUR3ZTQS1hRktJTHpLd21XanlraUYwcG1sekFnOTlFMXAwa0hsaXVibnEtZE55X3FCaGpuQkRsYUt5ZzF2YjdsSWhCSXNiQWVzNVN3MmctdUVaWGVfQ3pyRjVBN3VTci1lVXFrRzRNSG1DbnVSb05sYjN0WXNCZjJn?oc=5",
+          "source": "Bloomberg",
+          "published": "2026-11-25T21:58:19+00:00",
+          "topic": "markets",
+          "coverage": 9,
+          "score": 26.7,
+          "related": [
+            {
+              "source": "SuaraGarut.ID",
+              "title": "Nasdaq 100 Recovers From Tech Driven Bear Market Lows",
+              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sZzFlUlVVWkdub3lXS2cwZW85emZ2aFdlTy1GclBmSVNHWE9TaHR1dHBHRVhhbGtZZG03SzhDODlYT3IyUS1WeFNuSVhwVEdEQjBVS3cySUEzcjZyLWxhN0U3bGc2dUE?oc=5"
+            },
+            {
+              "source": "Limapagi",
+              "title": "Nasdaq 100 Recovers as Tech Stocks Rebound",
+              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1YUi16OURBak1BQ1JzbHFpTHcxM1h3Tmp1cWhiTlNVR0lTZWg2djRGLVpqWnRGQkZqeHdEYnppUldVWGg0QkdXN3RRMjQ1NFptdXk3WTNvRE90c0VVUDdVRWV0RG9HV28?oc=5"
+            },
+            {
+              "source": "bsinews.id",
+              "title": "Nasdaq 100 Recovers as Technology Stocks Rebound",
+              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFByeEpQR1VNeWV4bzNkcHJ2SkdaY2luc09hZk5mUVhaOUFNN0dnUXVyQ3p4cGtpUGVwZm1OcGxXYWlNMlFWY1Naa3M1Q2pBTF9EMjNRZ3M5aE1lWFpkWVRscg?oc=5"
+            },
+            {
+              "source": "Sky News",
+              "title": "Nasdaq 100 teeters comes close to bear market as Wall Street tech stocks fall further",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbzExYV9IdDZsaFlKT2g0TkZBUXd0Wm4yYVhYRk0xaVpVaFN1dERRS2VqdGQyODZWTkZlTlJSLVFKZ3B1eG5KSGJDcUVmYnFBaERFckJWQmU1UldYOUV2UnpseWk0ZzZZcVNERDhkUjV3bW04YnB6SEs2dURxSUd0YWk2TEJ2NWNJbWVQWFkwVGJocXZ3N1FJazZIN0hGS01WUVVLUTU2VVFlR1B0UWhIbUZGQXEyYWpVWUE?oc=5"
+            },
+            {
+              "source": "This is the Coast",
+              "title": "Nasdaq 100 teeters on brink of bear market as Wall Street tech stocks fall further",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNb0luREI1U1Z5S1hSdTRnOGdVTzhDSi1KLW9IYmlNcGR3ZkxTcFZvTXF3ZDlJdVlYWk1zOU1STWRVbXVMbUI4SGQzU2xXaHVxcXhUVTdkcmZQSldSVGZUQUpOM19qSkVQVGh0ZHRIbUJLRGVFVGh3R2ExaGdPTGVFREZFcExhZk1hNWxvT29qVV9PeUJWM29DQy1idGtZaHdyeVV1TTNnOThUSnpsQmtvMjNoWGN6RkxCMHRiNVdOYVZtb0x2UXc?oc=5"
+            },
+            {
+              "source": "TradingView",
+              "title": "Dow, S&P 500, Nasdaq Futures Edge Higher As Tech Rebounds After Selloff: DIS, VRTX, DE, CHTR In Focus",
+              "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOVkhTX3NidXhNQ0RocHhMZnFscUFTT2x1ckZDWDFxa0tlY0ZZcnZsUGE4VXZERTVJc2hKdm95V3dKUG90VWVPSDFEQXlDakU5bXFycW9vZlB1QTZjVGZuWDdNeWNPSTlMOW1HTU9YNnI1bks4azh2dmhmTWRvQ0hQMHpsUDdtWEZMS3Rta2Y2X05HM1g5UzhUTzRJelg3LXVkRnJjek84dVZjNnpxbGVHNFdZMWVyLXZXSi1hQ0U4WG1WMGoyQ0pUVTIyeTUtcDR2dHBKX196NE15Z2FNUlA3emYyejJpWUlIdDlSUWtxTEE2SmE2a18yWVdWcDROSEMzWTFfRXVn?oc=5"
+            },
+            {
+              "source": "Yahoo Finance",
+              "title": "Dow, S&P 500, Nasdaq Futures Edge Higher As Tech Rebounds After Selloff: DIS, VRTX, DE, CHTR In Focus",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLUd3eE9QdHc0TFlpa0w0YWZGbjl5OHB6YXZUdWdSZ2dMcVRBQ0doUDZFallrZ3ZLWGlMOUxzYkRqRVh2amlET0FSRGlWaG4tMU5YZkNQREs2eThRbmhSVXN5RWhiMW16VVNXUzMwU0Zja2pTTnI2NndoeFFwRFh4eFJmMzRaWXF3a2UwVE5sWjUxUEk?oc=5"
+            },
+            {
+              "source": "조선일보",
+              "title": "Dow Rebounds From 1,100-Point Plunge as Nasdaq Dips 0.6% on AI Weakness",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQd1RuSjMxb1F2UzJRSHdTdkZVczZYeWtvbGUtTkxhU1JqcmNfbEtuOWdGdVFobERHYVdqNW9aRUFhdW85ZGZheXJrMXBEMDhLVDNZT1NObzdQamxyaXUxRGlGRGZHcldobFJqNGZndUR5OXBCMUpJSzVqb0ROb3R2ZDlocU42RzdVWGhOeU5R?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Anthropic’s Stock Sparks Rare Divide Inside One Wall Street Firm",
+          "tr": "Anthropic'in hisseleri bir Wall Street firmasında nadir görülen anlaşmazlıklara yol açtı. Bu durum şirketin piyasadaki değerlemesi hakkında farklı görüşler olduğunu gösteriyor.",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNlM1cEVZV2FiQzNweFlINDdoTDVGaDFnOS02eWpIV3BDUks0Q2FNc2dUWUkxOHl4LThWVXJCeXFRMHFETVpORjR2Y0lKSkh5YVN0Y2dUR0pTb1dmWUJoQmtCWTdETmpwYWtDZ1otOTlHb2lpdWNpSG5Kc3Z2QW94VjlWX1doeEJOLW01NU04aDBBYmxFY3RnLU1Vek9jdmEtVE9TTmFJZ1pWd0xLUXpnUnZjOEx3UQ?oc=5",
+          "source": "Bloomberg",
+          "published": "2026-11-26T09:08:53+00:00",
+          "topic": "markets",
+          "coverage": 1,
+          "score": 11,
+          "related": []
+        },
+        {
+          "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
+          "summary": "Investors appeared to have shrugged off a fresh set of tariffs unveiled by the White House on Wednesday, targeting more than a dozen major trading partners.",
+          "tr": "Küresel borsalar, yatırımcıların ABD tarifelerini ve yapay zeka endişelerini görmezden gelerek ucuz hisse aramasıyla yükseliş gösterdi. Yatırımcılar yeni ticaret tarifelerine rağmen piyasada iyimser bir hava yakaladı.",
+          "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
+          "source": "CNBC",
+          "published": "2026-11-26T12:22:25+00:00",
+          "topic": "markets",
+          "coverage": 1,
+          "score": 9,
+          "related": []
+        }
+      ]
+    },
+    {
+      "id": "software",
+      "name": "Software & Developers",
+      "color": "#2563eb",
+      "stories": [
+        {
+          "title": "PolinRider: Malware spreads via GitHub and targets developers",
+          "tr": "PolinRider adlı zararlı yazılım GitHub üzerinden yayılarak geliştiricileri hedef alıyor. Bu durum yazılım tedarik zinciri güvenliğinin önemini bir kez daha gösteriyor.",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9SaEh2R2NONUVPYV9BNFlCUzRLZUI4Q2o4UjZLeEwzMTJ1bWQ2anB0YWEyM0JVdVAxaXRZWE01dVhaWEpnWnY5T3RyZW01OWR6RWJub2pKM3YweHhWRVNOZ2FncW9hQ3FYWWpkWGx0S290eUNCa3hRODhFMA?oc=5",
+          "source": "SecNews.gr",
+          "published": "2026-11-26T15:53:00+00:00",
+          "topic": "software",
+          "coverage": 2,
+          "score": 12,
+          "related": [
+            {
+              "source": "The Hacker News",
+              "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWXkwbDRoejluQkRWcmdCQnA2ZDdEU0tIT2ltYVVXb1FLazdBSlBLTWxQa1ZLRzVMMm1rUVEydGZzYmNSNzI5T0ppR0xXbjhaaWJTUktuT0otRnRjaWFSZExKcmY3YkJyQkV4SkpPZmdLRVQ0MlgwdWkyR1pNcjFIemFR?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "The leading unofficial GTA 6 PC port vanished from GitHub just as it reached a playable 25-30fps",
+          "tr": "Oynanabilir 25-30 fps seviyesine ulaştığı anda, en popüler resmi olmayan GTA 6 PC portu GitHub'dan kaldırıldı. Bu gelişme telif hakkı ve topluluk projeleri açısından önem taşıyor.",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNmVoWWtSSUJoZGpFaFdvWXJtNmdHcmliUmhsTXRud1hxcjVXMWlweWJkbFNwZHRxUVhzdUkyTUJvN1pETUtuQ3dXOUIxRGF6dXg2MXpEcWdGalJBZ2R4Qm1kWkNWcjZKUVJhd3dvVFNXcDJVa2l1TlltMEtzYjFRN3VCYnpPTmpPbUxOekUxcm9MbUpndEMxTi1VRDhwUE1HczQ0aTBHMDVEXzBsQmxV?oc=5",
+          "source": "XDA",
+          "published": "2026-11-26T14:59:25+00:00",
+          "topic": "software",
+          "coverage": 3,
+          "score": 11.3,
+          "related": [
+            {
+              "source": "mobidevices",
+              "title": "GTA 6 runs at 25 FPS on PC",
+              "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA5N3VSUmhjaTFIeFBYQVJwVm5uakhfSzJpaENvVE5hb1ZudVNGZW9sR0JOUWtMYWhGdVl5V3JoUmc4TFpSM2NGdUVNLW9kV1N1aUVFTDFoR210NDRDLTRWRTVOWlU?oc=5"
+            },
+            {
+              "source": "GameGPU",
+              "title": "Rockstar removed CGBJ's 25 FPS GTA 6 PC port from GitHub in minutes.",
+              "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOX0RMZnNuXzZVUUEyZkg1S2RXd0p5aUVnTjJXV0FQdkhSR1VHc1d0Tl84R2x4SU9ZTVhjVkppNzNpNm5WU2RDNXpCOEJ5eTFWUXBfMndQczFTenVwX09mZHZha0dqM29QMXVUek9icGhKNU9fdzhXZW1HVG8wR3NWRTctQTlSZ1lUX0Z5Y0JNVmRHYklMOHVTRFM3bHd1cHh0eFdBakFKdGo4NlRvRWVraThXX0FxR1FEWmtJU1JoQQ?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Android app developers will soon have to share their address publicly",
+          "summary": "Independent Android app developers are worried about their privacy after Google announced that from next year many of them will be required to share a phone number and address publicly. The policy change is intended to meet European Union regulations under the Digital Services Act, but Google says contact details will be made public worldwide. […]",
+          "tr": "Android uygulama geliştiricileri yakında adreslerini kamuoyuna açıklamak zorunda kalacak. Google'ın bu adımı Avrupa Birliği'nin Dijital Hizmetler Yasası yönetmeliklerine uyum sağlamayı amaçlıyor.",
+          "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu",
+          "source": "The Verge",
+          "published": "2026-11-26T12:06:24-05:00",
+          "topic": "software",
+          "coverage": 1,
+          "score": 11,
+          "related": []
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "color": "#dc2626",
+      "stories": [
+        {
+          "title": "StanChart’s Crypto Custody Unit Suffers Data Breach",
+          "tr": "StanChart'ın kripto saklama birimi bir veri ihlaline uğradı. Bu durum, finansal kuruluşların dijital varlık güvenliğindeki zafiyetleri gözler önüne sermektedir.",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPelp2M0xxeVgzWWkweXg0OWRHcllEdGluMFZmYjRpVnlvNERpVWNPNGJpc1liMEhOZFBKTldNOGI3b3A5aUdnWHktSTV3cTZiWThKZGJ0c1Z5Sk56amFQZmhEUEc3U041ODI2V2NCT3VmY2ppdFVjUWx2d0RRZHdtOUpIcEpTUzNfZWRLTmdwNUVINDFaUktROW9pRW9DbnVjS3dmUQ?oc=5",
+          "source": "Bloomberg",
+          "published": "2026-11-26T12:24:38+00:00",
+          "topic": "security",
+          "coverage": 11,
+          "score": 23.8,
+          "related": [
+            {
+              "source": "Yahoo Finance",
+              "title": "Standard Chartered’s Crypto Custody Unit Hit By Data Breach",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZjlyQzVrX1VEVzNLNWNLUkpmbGM5d2NVdTEyX0FxZ1JIZWVKMUJjSUU0M3k4OEI3dWZiV1FoTm9la3ZJamllRjByc3JTcnR5UVM4ZlFJSVZSa3U2cmVlY1M0RDM1YVA5clU2SGxWZXRtTVZIU0VGSkkzOHUxdkw4ODRISGVGY1FUTWJWUnhNR3FQdGlQbUlNVFZyX21zZkpLRldXa2x3?oc=5"
+            },
+            {
+              "source": "Coinpedia",
+              "title": "Standard Chartered News: Zodia Custody Data Breach Exposes Client & Staff Details",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVHQ1UlZVVWdkTDc2VVYxbWNGVW15cWdJbjl2U09Eb1FLSXlMNHpBLW82dlRuV3d4QkJqQlVKalhjSC1YcmZoU2hrTXJmLVdhZ3l2MkItNVczVWdvczZlY2Fad2NPd3E3U0MtcDhiNUQwYkNZWGdnaWd2MGxtVWxJNzJXU3Nwal9VMzgtc3Q4T2NrSXRMUGh3RGU4MGNXclZ5N1l1UUdheHl0Zw?oc=5"
+            },
+            {
+              "source": "Digg",
+              "title": "Standard Chartered’s Zodia reports data breach, says no unauthorized transactions found so far",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WTWp3cVNfQWJQcVlkbDFBTXFPSkU4RWlicWxObEt0QjNaQ1I4MUcweThKZ2N0WG1UcGlObzFrSWNhdEE0elpqUU5yQk9MYUxhdGc?oc=5"
+            },
+            {
+              "source": "ForkLog",
+              "title": "Standard Chartered’s Zodia Custody Reports Client Data Breach",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQb2lnZG1ORUFGTXpNaFoyZFhiRUxGMWxqQlRyVy0wQWdJb2Q3dVRPYjROOVlBVExnaG1ReHBubmlmOE80eHZNc0NmdXk2WXA0aEF2cHlPVUdCSGpxVEJURUIwYlRUa0ttbHNVOXZ2b3Nud0NqNmdDOWphWlFPa2ZhSWMwOHNNNWcwTmFfbA?oc=5"
+            },
+            {
+              "source": "CoinGape",
+              "title": "Standard Chartered Crypto Custodian Zodia Suffers Data Breach, Exposing Client Information",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdzRhMldZc0dIZERQWjYxYjRvbVFKVUEwOWNKbW9nNVVGMG5jeVd5dGFPMDBYd0otYjlIYTVxUzR1c1MwZGlFZ3VEWjFORTdQNFlJSHVtNXBUVVozY0Y3LVd2ZjJ1ZmxZc0o1RWQyWGFxY3l5RkZjZXpnNUlSeGpmRGtrTGQyUWR2cXdzMl91UU1mSTFsTXRSQ3ZXXzNsZVk2LXR3LVR6SkVmVjF0NUUwd0Jn?oc=5"
+            },
+            {
+              "source": "BigGo Finance",
+              "title": "Standard Chartered's Zodia Custody Discloses Data Breach Exposing Client Names, Emails",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9sUjg5RFZxeG9YeUs2anZCZGZKUmM5SklZWG42M0RPaDdwRC1WbldjLTdVOWY0XzFQOEJVdjN2TjQyUFhYUkNHREZ2LTF3VWdBNVNBYkp6NTIwVmdwYTBRQkZvSGk1NVRlNW1FNWwyV0lHWU10NHc?oc=5"
+            },
+            {
+              "source": "TradingView",
+              "title": "Standard Chartered’s Zodia Custody suffers data breach",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNalFNV0s0S0Z2RjVVbjZQcXZlc2lwc0hQb3JYWkJ6QXdRWTJDV3FkaFczQVlOZ0xhN1UwREQ4bkZ2d2VvbDk4aVNmbzU1Z29EdTd0SWNqTUV2WmNXdzhHQW45cWlSck1pNEF1dkVBWnppWUxtakhJSHVxX2YzWDM2X1Y4V204YWk3RkNIdjY1S2xxUHdFU3VtbV9QZ1dHQ0VLcDh4c3BXRDBfSFVKOXl0NmJ6LWN1dzRsdEE?oc=5"
+            },
+            {
+              "source": "Ledger Insights",
+              "title": "StanChart’s Zodia Custody data breach: contacts exposed, no losses reported",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeVU5OEpzMEZYaDJPYS1YaFFORzJva2NVbGs5SVVTM3pSSzRFelhBWFVQWVNYNzk2S0ExemM2cWRid3NZWFU5WE53R0hlVktfcDlTUjNQX1dNR0J4WXNUTHRSY00xUTZobElGM1Vyb09vTGhsdDdqYXppdFZJUm1oVnZ3UXVTaGI4bmdGUDJjOXh4QndVZTVLYW9iSlp4OXBSZ0Y4WmdnSQ?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Another highly critical Drupal vulnerability in the installer",
+          "tr": "Yükleyicide (installer) Drupal ile ilgili son derece kritik başka bir güvenlik açığı bulundu. Bu durum web sitelerinin güvenliği için acil yama gerektirmektedir.",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbUdyWHFCTHU2bUFWNnJLRVY0Wm45ZTZ5TEJqbU50YTRjV01IRFd0S0t0SjdRQ3lZRldPSE5DbV9KdlNLb0RGQ3hrU1RPc25XU1Z1aXVDRUk3YzFwdU5ZUzR0LWxseWpLWFJLWGF2LW9kQVkzTmNrODJpVVhsMHNndEg0eWU1cXRDZ2Fja0lLRlRSWVhvZmplb2wyR0tkV3l4aThFejR6UFZETGM?oc=5",
+          "source": "Techzine Global",
+          "published": "2026-11-26T14:34:18+00:00",
+          "topic": "security",
+          "coverage": 4,
+          "score": 12,
+          "related": [
+            {
+              "source": "BetaNews",
+              "title": "Drupal warns of highly critical access bypass vulnerability affecting sites",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOM0FtbUMxT3hEREl4cFk4NC1nTl9PUHZRcVE4M3dqVnpRck53NVoyaUl6eE5sdnVSNzQ1b3V5NGgwcDdmX2YtZ3RvN2FCZUNuNjNRbmRBdHVqQV9HZDl5RFVqalZRRFNPSm16RGhsVnFGTDNGWDJ1YVEzN1R4b2tBeVE0UzA0ZUk?oc=5"
+            },
+            {
+              "source": "The Hacker News",
+              "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCWTlxUXYyVjU2M0VwTkM2R1VCQ1hWVVlvdm9qWEdrbHNXZE9LWTdUano2b3pSSDkxbmVPLWRncE9BUU85eXFWV3hDSkZoeml3WEowdG5VNm96TmRSekViVzJ4UDZXNDZWaXN5VHBjYWhuX21uWlYzOVRMaHplQ00?oc=5"
+            },
+            {
+              "source": "GBHackers News",
+              "title": "Hackers Actively Exploit Critical Drupal Vulnerability to Take Over Websites",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSllqbjU4ZjhyZlFLbXhSMkVRZEZDNmt0M01oeDlFWEVGODVSeFNWWmtEckM4UzZNS2RTdnVkbEFSbGExS0NITmZfR3NfOFhTQVgxNzBDdmZ4Z3dTcktESEdvaHRwTTZic3VBLTR5ZEJpU1NSRGpRdGI4X0dEOFozMjhuc9IBiAFBVV95cUxOTlhtZFdTazIzQmQxU0lLamNENVJSNkdpdzY5ekJnVDVockRLd0F5S2JYbVRzN0V4QTh3ODhGemppcTlUVVBWNEtRbXZfQ2FsZVdlRi1xUnJ2N0V4bFhZLWxQWExXQ2NOdGtnQnZZVngzbl9OZ0hZajNZNHUyYTkwVVVsMTkwdGJ0?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "FIFA Cyberattack Leaves World Cup Stake Sale Documents Unaffected",
+          "tr": "FIFA'ya düzenlenen siber saldırı, Dünya Kupası hisse satış belgelerini etkilemedi. Kurum kritik verilerinin güvende olduğunu belirtti.",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSGJzQ0FUY0xFSmFGZUYxNmRxbER4WnVmaXBJUWRKUUp2bUc0TTNqYnczcDBIMUItenZQanJGOUlSZ3VXODZnTkpsOFBJMTZfTkFqNGJEOTM0enowVkRvcjJNWTNDaTUwa1JQeURfQ19mWFNkTXJnMF83aTBKejJQRFhZa1FTWnp5NVRUZVdfVl92SGN6S1FGeFU3VzNSYnFtN3FaMjluTE5ELTdoazVqUXFlQzM0TElidFpqRnd1SXZZdw?oc=5",
+          "source": "Forbes Middle East",
+          "published": "2026-11-26T18:50:40+00:00",
+          "topic": "security",
+          "coverage": 2,
+          "score": 9,
+          "related": [
+            {
+              "source": "Fox Business",
+              "title": "FIFA confirms criminal cyberattack, says $4.2B World Cup stake sale files were untouched",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUG5SNEQ2UjVDZkJqZVBDcnNyYU1lV1Y0QXUtU1Q0VUgwSWVfTUR4NzlwZjBoOVUzUWFhbnJVdjJhYUVyQTFKSGRUUDlIbzgzUXJsVUw3SWEtblROZTM1SFQ4bGRWUm9RQWR1ZzJCNzNCbXJLVkdHR3ZNb3lPdTUyd19CbkF5VDdESWVjU2Q4QWXSAZYBQVVfeXFMTjRWV3BPSlBWcS1jX2hqSXppZTZjNnZjZUpPZlFMbnoyUjlwVHlrVnZUOHkwR0NhUjNEc1BUWmtubkF6aVp3dS1ONGp6aFdYbnRFd01sTXM4MU5Dbzk1MlVBQkFRSXFXR0J3WVVYYy1GNkJfLTNUeEVVbXpjRWlVMEJXU1FUbURRckI0ZUVWck9nYV9WLTh3?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Georgia city targeted in cyberattack day before Thanksgiving",
+          "tr": "Şükran Günü'nden bir gün önce bir Georgia şehri siber saldırıya uğradı. Bu saldırı yerel altyapının güvenliği konusunda endişe yarattı.",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZ3UtN3ZKR0RVaDZOalFwRUdIWmZETGt2cFhadG1CMDFEbEN3bE91Z2I2R0ZDOVBMUmhybl9ScUk4clRGb2VpUWxlVEZseWFRenlRSU8wcWVadW5UNTdGSllDOU8zU0Nhbk1yTFlKNUJiRVR1Mnhqa1lwX1hBNWFibldXOGlJTkdDSHktS3NnTmF1bG5tSDJtR2xvZWVpTENrY0JreGQ3LTBhM2JCNmFwYXhxMHc3NTg3Tl9kX0UxNVA3ZTlISnZ6N3lzSzlEclpF?oc=5",
+          "source": "WSB-TV",
+          "published": "2026-11-26T17:49:24+00:00",
+          "topic": "security",
+          "coverage": 2,
+          "score": 9,
+          "related": [
+            {
+              "source": "WSB-TV",
+              "title": "Georgia city targeted in cyberattack day before Thanksgiving",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNR0paMkVNN1pOZnNTWnF2Yl95ZnRBYndrMmpvcm1kWU9NekY2b1Bld3JxWHo2U2RuU2tSY21ick95SVVLaFBCa2pJNHVXOV9mTGdSNDlqeGk4dXFYTzZlMGxSWDFqRV9TZ0tlN3ZRSkZ5LUtRalAtSVdQWWVmR3gxUnlvUHNRSmhWOElmUHhjbXdlV3ItblA1Tklwc0hnd3ZJTkZPXy1LZWtlVWNDQ0VnNG5iOFM1b2kxbmfSAc4BQVVfeXFMT0g2bGRjVk85czhNNy1KVVlqbzV4UzEtLVBTbWc0N1FqWXhka3JsUmR4cmxUTnN1aU00a1NXLWYwd1gtY01lTmJWS3NTVXJUdVpDQzV4eEVFLW9SVmozQWwtSXNjRWVrQ3BXLUluRnJlTlBBVGFLZlE4Vl9Gd3Y2SDlVVXc0aDFkbWNqTFBiTUZWNTJ6b0s3WmR6MHBsNkkzMXFWMHFqQWx3UXJhbFFybXF3N2piWmdaZnUxVjZYdjZxLWktUXFwVVluMk9ORkE?oc=5"
+            },
+            {
+              "source": "Yahoo",
+              "title": "Georgia city targeted in cyberattack day before Thanksgiving",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMGJwNGk3T041QUZfbWFWZ3Z3a2p4clFyeFFWeW1IelI0cGhHYWFGYWlzNm1mWVBCdlVYT3NWcXF3ZE1uZjhsUEY2U0hnaXdpaUN2YWkyYk1TQ1lkWVhnSGlsVlNKV2o3QjNtZjYyODVyWnREdmtMZk5LcHppdHRNeXZHcmR0ZnQ0OGpUc24tYw?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "name": "Regulation & Policy",
+      "color": "#d97706",
+      "stories": [
+        {
+          "title": "Federal judge blocks the FCC from reviewing ABC’s licenses early",
+          "summary": "US District Judge Loren AliKhan has blocked the Federal Communications Commission from conducting an early review of ABC's broadcast licenses in a preliminary injunction, and rejected its efforts to dismiss ABC's First Amendment lawsuit. ABC has accused the FCC of violating its free speech rights and claims the agency \"waged a retaliatory campaign\" against the […]",
+          "tr": "Federal yargıç, Federal İletişim Komisyonu'nun (FCC) ABC'nin lisanslarını erken incelemesini engelledi. Bu karar yayıncılık hakları ve ifade özgürlüğü davası açısından kritik bir adımdır.",
+          "url": "https://www.theverge.com/policy/1043116/fcc-disney-abc-broadcast-licenses-review-early-judge-block",
+          "source": "The Verge",
+          "published": "2026-11-26T11:38:00-05:00",
+          "topic": "policy",
+          "coverage": 1,
+          "score": 11,
+          "related": []
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "reinstated",
+      "partOfSpeech": "verb",
+      "meaningEn": "to officially put someone back into their previous job or position",
+      "meaningTr": "eski görevine iade edilmek",
+      "example": "after he was reinstated at Nvidia, the company he is said to have co-founded while eating there.",
+      "storyUrl": "https://www.nytimes.com/2026/11/26/business/dennys-jensen-huang-nvidia-plaque.html"
+    },
+    {
+      "word": "workaround",
+      "partOfSpeech": "noun",
+      "meaningEn": "a method for overcoming a problem or limitation in a system",
+      "meaningTr": "geçici çözüm veya etrafından dolaşma yöntemi",
+      "example": "Two Californian Nvidia AI chip customers are really Chinese-owned — companies used as workaround for government export controls",
+      "storyUrl": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQMnZuLWtQbHUzczNDS29VTDBUcTltQjdzQ0ZpMFZhOWtfWV9DbTZvNWFGVTk0Z0NCYVNyU3NPY0tORGlzTjhBejh3N3dBbEpkSkdULUVWM1ktcU81N2ZhZ0MtWnRsNG9PLTdLT0hlcFQyV3I4US04NEp0d2NSRGpURlZZMGRYTmlaYXZzTlFfN1JYcDgzV1hkb1FDN3VnWDAxLUxOb3hVVVNaSi10V2tqbFN3dnlBOVZjLU0yTFVHRktZbFFxRy1Bbm9JcnBOam12R0NhX0M4RGlNTVV6cWhxMDNLRl9mRXVCYzhwYnRfS3JMdTI3a0NfXzBDTWtZYV9pMm1YWXRRTGs?oc=5"
+    },
+    {
+      "word": "preliminary injunction",
+      "partOfSpeech": "noun",
+      "meaningEn": "a temporary court order made during the early stages of a lawsuit to prevent harm",
+      "meaningTr": "ihtiyati tedbir",
+      "example": "US District Judge Loren AliKhan has blocked the Federal Communications Commission from conducting an early review of ABC's broadcast licenses in a preliminary injunction",
+      "storyUrl": "https://www.theverge.com/policy/1043116/fcc-disney-abc-broadcast-licenses-review-early-judge-block"
+    },
+    {
+      "word": "vulnerability",
+      "partOfSpeech": "noun",
+      "meaningEn": "a weakness in a system that can be exploited by a threat",
+      "meaningTr": "güvenlik açığı",
+      "example": "Another highly critical Drupal vulnerability in the installer",
+      "storyUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbUdyWHFCTHU2bUFWNnJLRVY0Wm45ZTZ5TEJqbU50YTRjV01IRFd0S0t0SjdRQ3lZRldPSE5DbV9KdlNLb0RGQ3hrU1RPc25XU1Z1aXVDRUk3YzFwdU5ZUzR0LWxseWpLWFJLWGF2LW9kQVkzTmNrODJpVVhsMHNndEg0eWU1cXRDZ2Fja0lLRlRSWVhvZmplb2wyR0tkV3l4aThFejR6UFZETGM?oc=5"
+    },
+    {
+      "word": "unionization",
+      "partOfSpeech": "noun",
+      "meaningEn": "the process of organizing employees into a labor union",
+      "meaningTr": "sendikalaşma",
+      "example": "GTA VI developers vote against unionization",
+      "storyUrl": "https://www.theverge.com/games/1043169/rockstar-games-union-vote-iwgb"
+    }
+  ]
+}
