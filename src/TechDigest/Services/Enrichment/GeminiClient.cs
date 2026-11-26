@@ -88,9 +88,12 @@ public sealed class GeminiClient(HttpClient http, string apiKey, string? pinnedM
         return (status, text);
     }
 
+    /// <summary>
+    /// Aynı modelde beklemeye değer hatalar. 429 (kota) dahil değil: ücretsiz katmanda günlük kota dolunca
+    /// beklemek bir şey değiştirmez; doğrudan sıradaki modele geçilir (her modelin kotası ayrı).
+    /// </summary>
     public static bool IsTransient(HttpStatusCode status) =>
-        status is HttpStatusCode.ServiceUnavailable or HttpStatusCode.TooManyRequests
-            or HttpStatusCode.InternalServerError or HttpStatusCode.GatewayTimeout;
+        status is HttpStatusCode.ServiceUnavailable or HttpStatusCode.InternalServerError or HttpStatusCode.GatewayTimeout;
 
     private async Task<(HttpStatusCode, string?)> GenerateAsync(string model, string prompt, JsonObject? schema, CancellationToken ct)
     {

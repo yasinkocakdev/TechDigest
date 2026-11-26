@@ -62,6 +62,21 @@ public class GeminiClientTests
     }
 
     [Fact]
+    public async Task QuotaExceeded_SkipsToNextModel_WithoutWaiting()
+    {
+        var http = new FakeHttp(r =>
+        {
+            var path = r.RequestUri!.AbsolutePath;
+            if (path.EndsWith("/models")) return FakeHttp.Text(ModelsJson, type: "application/json");
+            if (path.Contains("gemini-9.0-flash")) return FakeHttp.Text("""{"error":{"message":"quota"}}""", HttpStatusCode.TooManyRequests);
+            return Ok("{}");
+        });
+
+        Assert.Equal("gemini-8.0-flash", (await Client(http).GenerateJsonAsync("p", null))?.Model);
+        Assert.Single(http.Requests, r => r.RequestUri!.AbsolutePath.Contains("gemini-9.0-flash"));
+    }
+
+    [Fact]
     public async Task PinnedModelNotFound_DiscoversAnother()
     {
         var http = new FakeHttp(r =>

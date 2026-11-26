@@ -34,7 +34,7 @@ public sealed class DigestPipeline(
         var ranker = new StoryRanker(config.Topics, _publishers);
 
         FetchResult fetched;
-        using (LogSetup.Step("1/5 Haberler çekiliyor"))
+        using (LogSetup.Step(log, "1/5 Haberler çekiliyor"))
         {
             fetched = await fetcher.FetchAllAsync(config.Sources, now - options.Window, ct);
             log.LogInformation("{Feeds}/{Total} kaynak, son {Hours} saatte {Count} haber.",
@@ -42,7 +42,7 @@ public sealed class DigestPipeline(
         }
 
         List<Story> candidates;
-        using (LogSetup.Step("2/5 Seçim: filtre, kümeleme, puanlama"))
+        using (LogSetup.Step(log, "2/5 Seçim: filtre, kümeleme, puanlama"))
         {
             var filter = new ContentFilter(config.Topics, _publishers);
             var allowed = fetched.Items.Where(filter.Allows).ToList();
@@ -56,7 +56,7 @@ public sealed class DigestPipeline(
         }
 
         Enrichment? enrichment = null;
-        using (LogSetup.Step("3/5 Gemini: Türkçe özet, anlamsal kopyalar, IELTS kelimeleri"))
+        using (LogSetup.Step(log, "3/5 Gemini: Türkçe özet, anlamsal kopyalar, IELTS kelimeleri"))
         {
             if (enricher is null)
             {
@@ -97,7 +97,7 @@ public sealed class DigestPipeline(
             Model: enrichment?.Model);
 
         EmailMessage email;
-        using (LogSetup.Step("4/5 Çıktılar"))
+        using (LogSetup.Step(log, "4/5 Çıktılar"))
         {
             var links = new EmailLinks(options.DayUrl(digest.Date), options.ArchiveUrl, options.RepositoryUrl);
             email = new EmailMessage(
@@ -119,7 +119,7 @@ public sealed class DigestPipeline(
             }
         }
 
-        using (LogSetup.Step("5/5 Gönderim"))
+        using (LogSetup.Step(log, "5/5 Gönderim"))
         {
             if (options.DryRun || sender is null)
             {

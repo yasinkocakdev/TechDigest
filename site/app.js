@@ -173,14 +173,13 @@
     },
       h("div", { class: "flash__inner" },
         h("div", { class: "flash__face flash__front" },
-          h("span", { class: "flash__flip" }, "Tap to flip"),
-          h("div", { class: "flash__word" }, word.word),
           h("div", { class: "flash__pos" }, word.partOfSpeech),
-          h("div", { class: "flash__example" }, "“", highlight(word.example, word.word), "”")),
+          h("div", { class: `flash__word${word.word.length > 13 ? " flash__word--long" : ""}` }, word.word),
+          h("div", { class: "flash__example clamp", title: word.example }, "“", highlight(word.example, word.word), "”")),
         h("div", { class: "flash__face flash__back", "aria-hidden": "true" },
-          h("div", { class: "flash__pos" }, word.partOfSpeech),
-          h("div", { class: "flash__en" }, word.meaningEn),
-          h("div", { class: "flash__tr" }, word.meaningTr),
+          h("div", { class: "flash__pos" }, `${word.word} · ${word.partOfSpeech}`),
+          h("div", { class: "flash__en clamp" }, word.meaningEn),
+          h("div", { class: "flash__tr clamp" }, word.meaningTr),
           word.storyUrl ? extLink(word.storyUrl, { class: "flash__link", onclick: (e) => e.stopPropagation() }, "Read the story →") : null)));
 
     card.addEventListener("click", () => {
@@ -347,6 +346,7 @@
         h("div", { class: "stats" }, h("span", { class: "stat" }, h("b", {}, words.length), "words"),
           h("span", { class: "stat" }, h("b", {}, daysData.length), "days of news"))),
       h("div", { class: "toolbar", role: "search" }, h("label", { class: "search" }, icon(ICONS.search), search, h("span", { class: "kbd", "aria-hidden": "true" }, "/")), shuffle),
+      h("p", { class: "hint", style: { margin: "-10px 0 16px" } }, "Read the example, guess the meaning, then tap the card to check."),
       words.length ? grid : emptyState("No words yet", "Vocabulary appears here once Gemini has summarised a day's news."),
     ];
   }

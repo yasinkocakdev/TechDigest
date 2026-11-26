@@ -18,6 +18,17 @@ public sealed class CompactFormatter() : ConsoleFormatter(Name)
     public override void Write<TState>(in LogEntry<TState> entry, IExternalScopeProvider? scopes, TextWriter writer)
     {
         var message = entry.Formatter(entry.State, entry.Exception);
+        if (message.StartsWith(LogSetup.GroupStart, StringComparison.Ordinal))
+        {
+            var title = message[1..];
+            writer.WriteLine(InActions ? $"::group::{title}" : $"▸ {title}");
+            return;
+        }
+        if (string.Equals(message, LogSetup.GroupEnd, StringComparison.Ordinal))
+        {
+            if (InActions) writer.WriteLine("::endgroup::");
+            return;
+        }
         if (entry.Exception is not null) message += $" ({entry.Exception.GetType().Name}: {entry.Exception.Message})";
 
         writer.WriteLine(entry.LogLevel switch
@@ -39,23 +50,21 @@ public static class LogSetup
         .AddConsole(o => o.FormatterName = CompactFormatter.Name)
         .AddConsoleFormatter<CompactFormatter, ConsoleFormatterOptions>());
 
+    internal const string GroupStart = "\u0001", GroupEnd = "\u0002";
+
     /// <summary>
-    /// Bir adımı log'da başlık altında toplar. GitHub Actions'ta katlanabilir grup olur.
-    /// Konsol logger'ı arka planda yazdığı için grup sınırları stdout'a doğrudan yazılır.
+    /// Bir adımı log'da başlık altında toplar; GitHub Actions'ta katlanabilir grup olur.
+    /// Başlık da logger kuyruğundan geçer, böylece mesajlarla sırası karışmaz.
     /// </summary>
-    public static IDisposable Step(string title)
+    public static IDisposable Step(ILogger log, string title)
     {
-        Console.Out.Flush();
-        Console.WriteLine(Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true" ? $"::group::{title}" : $"▸ {title}");
-        return new StepScope();
+        log.LogInformation("{Marker}{Title}", GroupStart, title);
+        return new StepScope(log);
     }
 
-    private sealed class StepScope : IDisposable
+    private sealed class StepScope(ILogger log) : IDisposable
     {
-        public void Dispose()
-        {
-            if (Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true") Console.WriteLine("::endgroup::");
-        }
+        public void Dispose() => log.LogInformation("{Marker}", GroupEnd);
     }
 
     public static ILogger<T> Null<T>() => NullLogger<T>.Instance;
