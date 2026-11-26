@@ -5,6 +5,10 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    # Büyük sürümler (MailKit 5, .NET 11 paketleri) API kırabilir: elle, bilinçli yükseltilir.
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
       nuget:
         patterns: ["*"]
