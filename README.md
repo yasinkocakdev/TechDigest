@@ -15,7 +15,7 @@ Runs entirely on free services: GitHub Actions + Gmail SMTP + Gemini free tier.
 ## How it works
 
 ```
-GitHub Actions (cron 03:45 UTC)
+cron-job.org (07:00 Istanbul) → GitHub Actions (workflow_dispatch)
   → FeedFetcher      fetch all feeds in parallel, keep the last 24 hours
   → Deduplicator     drop the same story reported by multiple outlets
   → Categorizer      keyword scoring → topics, filter out stock-tip clickbait
@@ -58,10 +58,28 @@ To send a real email, set the environment variables below and run without `--dry
    | `TO_ADDRESS` | where the digest should arrive — separate multiple addresses with commas (sent as BCC) |
    | `GEMINI_API_KEY` | Gemini key (optional) |
 
-4. **Test it** — *Actions → Daily TechDigest → Run workflow*.
+4. **Test it** — *Actions → Daily TechDigest → Run workflow* (tick *Dry run* to skip sending).
+
+## Schedule
+
+GitHub's built-in scheduler delayed runs by 8–10 hours, so the digest is triggered externally:
+
+1. Create a **fine-grained token** at <https://github.com/settings/personal-access-tokens/new>
+   — *Only select repositories → TechDigest*, permission *Actions: Read and write*, expiry 1 year
+   (renew it when it expires).
+2. On [cron-job.org](https://cron-job.org) create a job:
+   - URL: `https://api.github.com/repos/yasinkocakdev/TechDigest/actions/workflows/daily-digest.yml/dispatches`
+   - Every day at 07:00, time zone `Europe/Istanbul`
+   - Method `POST`, body `{"ref":"main"}`
+   - Headers: `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`,
+     `X-GitHub-Api-Version: 2022-11-28`, `Content-Type: application/json`
+   - A successful call returns `204`.
+
+GitHub's scheduler (08:00 Istanbul) stays as a **backup**: it checks whether a "Send digest"
+run already succeeded today and skips itself if so.
 
 Optional: set a `GEMINI_MODEL` environment variable to pin a model. Otherwise the newest stable
 `flash` model available to your key is picked automatically (so retired models don't break the digest).
 
-> **Note:** GitHub pauses scheduled workflows in public repos after 60 days without commits.
-> If that happens you'll get an email from GitHub — just re-enable the workflow in the Actions tab.
+> **Note:** GitHub pauses the backup schedule in public repos after 60 days without commits.
+> The cron-job.org trigger keeps working regardless.

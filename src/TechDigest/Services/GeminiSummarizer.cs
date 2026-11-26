@@ -22,7 +22,7 @@ public sealed class GeminiSummarizer(HttpClient http, string apiKey, string? mod
 
     /// <summary>Yoğunluk (503/429/500) durumunda her modelde bekleme süreleri.</summary>
     public static TimeSpan[] RetryDelays { get; set; } = [TimeSpan.FromSeconds(10), TimeSpan.FromSeconds(30)];
-    private const int MaxModels = 3;
+    private const int MaxModels = 5;
 
     public async Task<bool> AddTurkishSummariesAsync(IReadOnlyList<DigestItem> items, CancellationToken ct = default)
     {
