@@ -221,7 +221,16 @@ Projenin asıl değeri burada. Her biri gerçekten yaşandı:
 7. **Sahte veriyle güzel görünen tasarım, gerçek veriyle taştı.** "preliminary injunction" gibi uzun kelimeler kelime
    kartlarından taştı. *Ders: arayüzü gerçek veriyle test et.*
 
-8. **AI ile çalışmak:** Asistan kodu hızlı yazıyor; ama hangi sorunun gerçek olduğunu loglardan görmek, "bu formül
+8. **"Test başarılı" ama ertesi sabah mail gelmedi (27 Kasım).** cron-job.org'da token'ı yeniledik, TEST RUN 204
+   verdi, rahatladık. Ertesi sabah 07:00'de mail yoktu. Teşhis sırası: önce GitHub Actions'a baktım — o sabah **hiç
+   çalışma başlamamıştı**, yani sorun kodda değil tetikleyicideydi. Sonra cron-job.org'un *History* sekmesi:
+   **401 Unauthorized**. Sebep: TEST RUN, formdaki **kaydedilmemiş** değerlerle çalışıyor; SAVE'e basılmadığı için
+   kayıtlı iş eski token'la kalmıştı. Token'ı yenileyip kaydettikten sonra zincirin tamamı ilk kez gerçek gönderimde
+   uçtan uca çalıştı: mail → `archive` dalına commit → site güncellendi.
+   *Ders: testin geçmesi, kayıtlı yapılandırmanın doğru olduğunu kanıtlamaz. Bir de: hata ararken zinciri baştan
+   takip et — "çalışma başladı mı?" sorusu, sorunun kodda mı dışarıda mı olduğunu tek bakışta ayırdı.*
+
+9. **AI ile çalışmak:** Asistan kodu hızlı yazıyor; ama hangi sorunun gerçek olduğunu loglardan görmek, "bu formül
    neden log2?" diye sormak ve sonucu kendi cümlelerimle anlatabilmek benim işim. Bu rehber o yüzden var.
 
 ## 11. Mülakatta sorulabilecekler

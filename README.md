@@ -112,8 +112,20 @@ Set `GEMINI_API_KEY` to include Turkish summaries and vocabulary. To preview the
    - Headers `Authorization: Bearer <fine-grained token: this repo only, Actions read & write>`,
      `Accept: application/vnd.github+json`, `X-GitHub-Api-Version: 2022-11-28`
    - GitHub's scheduler (08:00) stays as a backup and skips itself if today's digest was already sent.
+   - **Press Save before Test run** — cron-job.org's test uses the unsaved form, so a passing test does not prove
+     the saved job works.
 6. **Test** — *Actions → Daily TechDigest → Run workflow* (tick *Dry run* to build without sending or publishing;
    the rendered email is attached to the run as an artifact).
+
+## Troubleshooting
+
+| Symptom | Where to look | Usual cause |
+|---|---|---|
+| No email in the morning | *Actions → Daily TechDigest*: did a run start at ~07:00? | — |
+| No run at all | cron-job.org → job → *History* | `401` token expired or not saved · `404` workflow path/name changed |
+| Run is red | The run's log (warnings are annotated at the top) | Gmail app password revoked, missing secret |
+| Email arrives without Turkish summaries | Log step *3/5 Gemini* | Free-tier quota or overload; the digest still goes out |
+| Site not updated | *Actions → Publish site* | Pages source not set to *GitHub Actions* |
 
 ## Security & maintenance
 
