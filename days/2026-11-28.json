@@ -1,0 +1,538 @@
+{
+  "version": 1,
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T04:01:14.7191574+00:00",
+  "model": "gemini-3.6-flash",
+  "stats": {
+    "fetched": 348,
+    "stories": 20,
+    "sources": 127,
+    "feeds": 13,
+    "feedsFailed": 1
+  },
+  "headline": {
+    "title": "OpenAI countersues Apple for stealing trade secrets",
+    "tr": "OpenAI, ticari sırlarını çaldığı iddiasıyla Apple'a karşı dava açtı. Bu durum, iki teknoloji devi arasındaki hukuki ve rekabetçi gerilimin tırmandığını gösteriyor.",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaFNnMVlYZkZkOXB1Sk41M093UXdVMnBDZFZQMFFKQXhWeFVYZnlDYjVfNlJ1NFBvYnA4YWp2YjdTeWxEcGlad2RRb3pCd0JLVU5HNVZxRmlYTlVBNXVzSlk5TURYYXpBZERNMmUzTUZLVFF4ZDhyY3E2emE3MWtMZEZIY3A?oc=5",
+    "source": "Financial Times",
+    "published": "2026-11-27T18:20:05+00:00",
+    "topic": "security",
+    "coverage": 74,
+    "score": 39.8,
+    "related": [
+      {
+        "source": "Al Jazeera",
+        "title": "OpenAI countersues Apple over trade secrets as AI race heats up",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxON1UyNzVUM1VWYllDUVB5Rl9LVDYwZExiMWt2WFp4eWVUckVjdDhqbFFfSXR1b2NiRm9LbFZQZ2xlZTNkRmtaSkZnb2M4ekJwVkVxbE1jdmNlazc2QUMxallwb1JpTWRvVk9ZOW12SVM5MTZ4RS1CQkNGcW5qZlMySWJZTjBkNXBtZXByR0NuVWdJZWVXWW8zcWRsTUF1ZUJXMlNVNWxEM2l0VThn0gGyAUFVX3lxTE16T05QbEdEbTdCUklBU3kyX05YX2RxaTZrVl9yWTEtWDF4dThXOFAyODNDTjFHTy1LRmJkZEJpd1E0eTBOaWxkS0NXV1BIWFo0V1ZTU01JMzd5bVpkMHFWTEhSNEVBT3E1cXd1NVJFbEJtSXFURGpxMzlKOWtNTXg1amFKZDhEOWttUlhkU1Y2UmVnSUgwRWZqWmJmTzdRaVBNM01pczFxTnh0RzYxRk02MFE?oc=5"
+      },
+      {
+        "source": "CNN",
+        "title": "OpenAI countersues Apple in ongoing trade secrets fight",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5XTW11Wi1QV2lsNzVvRlYyVklERHdsUkxKLXdRbjRjbDk2eC1UYmM1LXNZN2FPdEdhRC1lci1SYU56M3ZSOWMxM3p6OXB0c2h0dTFVVjBHSWNVSEZJSnNuSnBJMU5HZGd6STY3Sg?oc=5"
+      },
+      {
+        "source": "Engadget",
+        "title": "OpenAI Countersues Apple And Accuses It Of Stealing Trade Secrets",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPX3FiOEtHMXhvNzJzUmVNUUZVMEUtWGZoWThRUG1jWmJWMVduTk5sekljODZnSEtiYlh0ckw4VHhva3ZXeVNwLTByVllEU2tYNDZzZ0FObF9UYU9qTTN2NGZtNVRnUHJNc3lYOXhaeWM3bW1tZDRnZkh0b3dKSmxhd1hPRG9lNnRMci0wWmdpWVJzMXNfWkI3YnNTZ0k1N1l5?oc=5"
+      },
+      {
+        "source": "The Information",
+        "title": "OpenAI Countersues Apple In Trade Secrets Battle",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWElkVUZWcHdsdnJUVHBvd0ZzeTNRbGhQeUM5ZnJzbGdQQzVCYTNIcFdMQzZYNTZ5Z2VTUmlqUUtFdjV4a2NBRXNuVVJCV0xCTmwxVU5xejMxZDllaktNSkx4YTNQVE5EQVM3eHMyM3Nnb3Q5NTZmZ0hZTjZlUVE1VDc5aXRBTkFMWE9tazMxaw?oc=5"
+      },
+      {
+        "source": "CNBC",
+        "title": "OpenAI countersues Apple for stealing trade secrets",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOanQycFJEajNxdE50c0xGTkpDeGlsaUFUdDJZaXhWZU1vTEJSRS1Zc1pPZ3RrX19oUFRCMVhPdHkxWF9QYnl3YV9uZExBOExFWXk2SUpzNmFGd01hM3ZMUWNyckhTdzc4d1Rpb2g0NURNZjZMWTAzTlF2QjRCZW1qbzFqbHNnblh6LVFjUjlJdUVVSE5oN3NZcXJmN3FGR0t00gGmAUFVX3lxTE54U0ZaVnhJdGtVLTYwTmxSSzRqY2dRdFRxZE1jc0xYdFVzRWNmMDgxZ2tvSkNzMUI1T2pFaGNEVmxVQXBTTm1YczNKU1hjMG1KTTBmbUM5SjhxMmZ2UVA5SU85NHd6ZGZSQU1Qcl9PelVDNFdNVXVXdlNsdHZkcl9mZkxRVDRIejJlcGtmVENUS2pBVkduZEVHcGJTUkp2M1RKZlJ5R1E?oc=5"
+      },
+      {
+        "source": "Business Standard",
+        "title": "OpenAI accuses Apple of trade secret theft, unfair hiring restrictions",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVWFDbFh1SW5tdjlSZTVzU1lMWDNrMmJNRGpadlc1Y3RpSE8tclphWTRuV2xFMUpFc0xQNTRQMVlnM3AwUmhIZXZ6U0J4U3VuRGZ5UjgxQ0N2R0ZkSDVNY1MzZEVJZGRvTmNwdHNLbndRcHNQX2J4U1NUNDBGZ01ZemdBV0NzRmtWMVBsRDNpSVZteWpJN1lZZWptRlJTZWE1RGc2RnlRZ1Fnc3ZWdkpZbjN5VnF6YWh5OUxQNmFZZW5UZk9BYlZ5alQxZUMxblBObzh6amQxRjM3S3dl0gHiAUFVX3lxTE1OLWUzT09rT2h0MmVGaFgyY2FFd1liT2lUbDUyQWI0bDlpT3dvNTJXU1BJaFVia3V1RG1oZE0tUHJNaFU0Wm94V0Y3dGh6blFTeXNQQm1vR0FUenJsbENKUmpYd29qSEFlVWt0ZFdzREVrRDJJWkJjdHl4Y2lieW13ZEFNbHU0SFllRnpWRjZtTWtMTlhfNEVTYkZGQTF0ZHV3MmxNbVp4VHM5ZzdUeXA0c2prbndOekdmY21odjBTVFhscDYwbmdyb011VlB0QklaZmtsbFpia25JRUdMdnVvS3c?oc=5"
+      },
+      {
+        "source": "KQ2",
+        "title": "OpenAI countersues Apple in ongoing trade secrets fight",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZGNDc0RuS2hnQVZwaEhjOFptRmx3LVhud2xwRUdoUld1VEtmeVJReW1MTEw2a1dmbWZSSlo1WUNaUEMzeF9IQmVKbjhicjgza1pJMXVtUmVYLWp0Z24zeEcwOUY0SXA5MnpMa0ZoY2UwekRLNjdXUnI4dUpGT1dkMnY4emVZZURGRkNWMVl1VDhKcEVqOC0zNkFiVnk3TDhicTdXOGpxZUFpVFB0Nnc?oc=5"
+      },
+      {
+        "source": "Livemint",
+        "title": "OpenAI vs Apple: What is the trade secrets dispute, and why are the two tech giants heading for a legal battle?",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZjdYcGdYQUl6SGdOMUtIaDhadHAxd25pdWVSMHFaRmlCaWdfYVp6RnNwR2VNb04zOHEzZUwwZ09JcDB6TU9faWwxdnJDX2lzRnNTamZOMjluc2YwZ3R2ZEFZUkJNdnFDZVkxenNmVy1abUZRbW1Ebi15TXZTTlRxMDdaYmdRalBNU0M1MEZJSXphS1c0SzdZaU9TTV96UWk0RUdFM2pneElORWNCVjF3enNKd2ZoR3F4UGZSMHRUY0h0MXRSU2xsekVMdjdvbkw3RWQ3SENZV3lXNFRMOWlwZWdnd0ZOdzZBRkxYRGtDanhzdXRYeXU5V1czQ1nSAYICQVVfeXFMT1VHZGlZNk1CMmEwQ3lLeEV0QzNOMGRpU0NXUklWblh1Y25qVVp1eGNFZGh3SFVpcC1ZdWhYTkRSS2tLSDhCZVY4UXMyX2dzU3pHSUZTUGRXdm16ZHVibUZIdkdHUElmR0U2QnlMUEhYc0tsbXpPbWEzWTZucEtPME9sUmtEbkxNby0zOTBKY2FqNWpRNmRXd3ctUVA2RFlPbl9tZG5yRTNWeEpGTDhqZXgxNVZ5blF2Q2c2R3FjSEY2MThLWHBKMVNQSjZmbzFJU2JKX2F6Qkx0UzNaVjN5S0pSaDJNalRfbFVnNWJHV294ZkMyeW5wNmdTZWdnd3RDTkdB?oc=5"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "ai",
+      "name": "AI Companies & Models",
+      "color": "#7c3aed",
+      "stories": [
+        {
+          "title": "OpenAI Says Apple Pressured Suppliers to Shun Its Devices",
+          "tr": "OpenAI, Apple'ın tedarikçilere kendi cihazlarını dışlamaları yönünde baskı yaptığını öne sürdü. Bu iddia, büyük teknoloji şirketleri arasındaki pazar rekabetinin sertleştiğine işaret ediyor.",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPV0xaWXJoMk5iSnR5QTZlS2ZUeWNxZlVmQU9NZEs4TnpYVWRGYWdoeW1yWVdlNlUxRDZ2QmZtbVJncGxJUW5HcjBrbzFISUJKYkxGVzJmN2NvWW9QeWtmNkVOTHBpNkZBYXRwdjBOUjRyeDBHMWplZmQ4YUx0cjNMcE9naVV4bzZuSlVBZTB4WHg0RUlsZkRxLVdobWpUUFlUbmNVYkxMX3ZPQlQw?oc=5",
+          "source": "Bloomberg",
+          "published": "2026-11-27T22:44:24+00:00",
+          "topic": "ai",
+          "coverage": 3,
+          "score": 15.3,
+          "related": [
+            {
+              "source": "The Japan Times",
+              "title": "OpenAI says Apple pressured suppliers to shun its devices",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUVFwa3dtaVRYYVJvdG5zRnRFRFdpNlFGaEpnSUh5akNyNnhlb0lZekttQkZ5eUJQVDI3VjFWeEVaV2N3c1pZazNxQlVLVmU0UEIyUlRsS3MzaVBBRHZXQ1gtaWtRcDlZM3FDR05COUtEZ0hPN3pfQjNnRDlWTjd5ZmdJalJMN2d4SDFMSjJILXI?oc=5"
+            },
+            {
+              "source": "Yahoo Finance UK",
+              "title": "OpenAI Says Apple Pressured Suppliers to Shun Its Devices",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZms3RVBNRHhZMWYyVVFiTy1FdW1xNUNHb3JGN1VYcDAybHZZdlFjd3g4VXQ2SGNBSDZsM0FsX2w1VVNmbHhUQlRqaWpzbjVvVDc1Q3A1TWtqdHFPS3o0eTBRbkc0N2I2WFZNMzdsdXB1TnJwMzhuWV9vMUoxV3g0NzZVNmhVU05GYldrZU9LYw?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Anthropic Faces First Major Share Unlock as 303 Million Shares Become Eligible December 15",
+          "tr": "Anthropic'te 15 Aralık itibarıyla 303 milyon hisse serbest kalacak ve şirket ilk büyük hisse kilit açılışı ile karşılaşacak. Piyasadaki hisse arzının artması, hisse fiyatı üzerinde baskı oluşturabilir.",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZUd0QVh4eGF6NktfZ29FZU1wa0hWY09ZWUpIbng3ZW91eWpNLWEtdW9LV3p4R182em5Rb3JmQVNlLWgxc1liRUdQR0hBaUNOTUwzOXJ6YkNCUjk1VWNFR1ZUYzFWNi1zSWxXdkRBRTFHVGJSaEZFMXgzaG5qeVJwQnpyVHB4WTIyWFBUYUVyTmNsZ0h0WkpwbExvU19vdm9kYnZfaGVFc1BvMTA?oc=5",
+          "source": "PrimeXBT",
+          "published": "2026-11-27T22:02:06+00:00",
+          "topic": "ai",
+          "coverage": 3,
+          "score": 11.3,
+          "related": [
+            {
+              "source": "Crypto Briefing",
+              "title": "Anthropic faces its first major share unlock as 303 million shares become sellable December 15",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB1QWNPVXJvVEowRHF2N0RuNDdjX3RtVUR0TFI1OWs2MEZULTJUMnRTV2ZBbzYxZVlMOXhobERlRWtzWnFEYm9DbTFKcGpOdUhubzN1UkExMmlMcUdFaTM4V0p4b3NfTVFjeGg1QTdhWV9vZ3Y5NkE?oc=5"
+            },
+            {
+              "source": "The Globe and Mail",
+              "title": "Is Anthropic Stock a Buy Before Its Dec. 15 Share Unlock?",
+              "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdlBjcGJob01qM2MwMm0wbkNFZ3RvMTNGZ0Mtbzk0RVBZV01GMk5TdEtyTlgzQ3hrbnNCWVRRMGVYVGlDSGI2MVQySlhvV0xreTREdnU3Q0hrX1RTRzhkbXNULVdobnliWkpkNDdEcjdLMXlKVmhQc1hkaVM3RGNjSUdqcVpTNjFSRzFtUTRKeFFlazFiM0tNcVhFa0REZlBlUnp4Sm9mSDI0dnA0cUdPQzlFY2pJSFd6TzRlT0haNDdkWEdmODBZMWpHSzI1REZQYm1Pc3BFVQ?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "OpenAI asked investors to steer clear of xAI, Anthropic and three other named rivals",
+          "tr": "OpenAI, yatırımcılarından xAI, Anthropic ve üç rakip şirketten uzak durmalarını istedi. Şirketin bu adımı, yapay zeka pazarındaki sermaye rekabetinin ne kadar keskinleştiğini ortaya koyuyor.",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZRTFlczVTaG93T1MteExmUXJFWU5FckJwY2MyUVkxZUZvNnVVZnNwSHk3aFRzejFoaVBxTUllN0V2akNkUkFJb25acHRaTUQ1THJqaF93NWFDaFR5YmkzNjcyMGllVkl6V3ZBeW03V214TGxrd2ozV3Ricw?oc=5",
+          "source": "Crypto Briefing",
+          "published": "2026-11-27T23:17:11+00:00",
+          "topic": "ai",
+          "coverage": 1,
+          "score": 11,
+          "related": []
+        },
+        {
+          "title": "Saudi Engineer Accused of Bugging OpenAI to Be Released on $1 Million Bond",
+          "tr": "OpenAI sistemlerine dinleme cihazı yerleştirmekle suçlanan Suudi mühendis, 1 milyon dolar kefaletle serbest bırakılacak. Olay, yapay zeka şirketlerindeki endüstriyel casusluk risklerini vurguluyor.",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaUdJQnh3YWdwSlhUalhNT3RVdVJmamprVFRUdFVKQXFxSEpjU0JVNEYtSDFNQXREcUVsRE4xUWVOQ2h1RFhXaWVOdlU0amtCa1k0MkVmZXdmajlpdFBjWElKZjRqLVlucF94NWVHV0NkSmRrWFYtcjlLVFFNZHpQc3lGWUdydUVXT0JBWl9MRFNGR0Fnd2h0d2hiSWwyUkRRbEVLVWd4VHFDMFk?oc=5",
+          "source": "WSJ",
+          "published": "2026-11-28T02:39:35+00:00",
+          "topic": "ai",
+          "coverage": 1,
+          "score": 9,
+          "related": []
+        }
+      ]
+    },
+    {
+      "id": "chips",
+      "name": "Chips & US–China",
+      "color": "#0891b2",
+      "stories": [
+        {
+          "title": "Vitalik Buterin Calls for Open-Source Chip Designs to Secure Wallets",
+          "tr": "Vitalik Buterin, kripto cüzdanlarını korumak için açık kaynaklı çip tasarımlarının kullanılması çağrısında bulundu. Açık kaynak mimarisi, donanım düzeyinde güvenlik açıklarını azaltmayı hedefliyor.",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sald4YklGWl85bEtidnZTWU15N0NvZ3RMWEJ6WmdGaXNsTXczcHBTc1BBNTEtbnNsbmxtWTBWS3hWaDNBeU5Zc2FNcThlR2JXNTRrdkhYT0xPODQ?oc=5",
+          "source": "www.tokenpost",
+          "published": "2026-11-28T02:04:00+00:00",
+          "topic": "chips",
+          "coverage": 3,
+          "score": 11.3,
+          "related": [
+            {
+              "source": "AMBCrypto",
+              "title": "‘Not your Silicon, not your keys’ — Ethereum’s Buterin calls for open-source chip design",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYkZVMkNVU2VJcDdDeTZfdWxiWDdIU25zX0NHR0tDTWFaV2lsbGRpcWtUdFYwZVNzVXdQNGRVakVUWGFycThKQkpfVUtLWEVxRDBGcm0zY1FxLVkwNXBkeHBIME1fQzd5elpXTFJWWXpUY1dTekhESkxMTEZpc1Vvd09DaHl2SDRCeldISlVoR2wyV0lsRWRJUnh0QzJIUkpwVWtqa2k3RWs?oc=5"
+            },
+            {
+              "source": "Analytics Insight",
+              "title": "Vitalik Buterin Explores Open-Source Chips for Secure Crypto",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcm9fdV90Vm5XWHhMUExSYWg1X2tCX1JRamE0R0NLTW55VzlJSVllN2U5SlUxMEhKSHpUT1l0R0ZRY3hNdFowTmdTZFNmWWxBVXgzSVh0SUloWFdhbkZUcjRRSDdEaHFZNXFBRWJUUmZIY1MxVzFMcTVmMXJKTnlaSFZJSjVWLUF1ZDY4UVdzakxIUmViNVNkNTBrdDV2dHPSAawBQVVfeXFMT2dKYTk4MlNnQ0w0RXdjR29wQ0RqQXk5eUduTFNqRkRFTHo1ZG5VOFlrNy1XUUdFOERZRXBkZDJFRTNkUU9hSmRUTVA3Y1IxUEJpWVd1VmNIQ1RlM3NUb2ZOUTdlXy1XcXg2bUFSVDBxS29YVGpSeTlqbkVQRWgzRGMzZ19Bbk1kRllISEx5TjZoVGdwVGVZU1BPRVlfT0pvTmxxUG5jMVpES3o2WQ?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Huawei guilty on 10 counts in US trial; Nvidia’s Jensen Huang returns: SCMP’s 7 highlights",
+          "summary": "We have selected seven stories from this week’s news across Hong Kong, mainland China, the wider Asia region and beyond that resonated with our readers and shed light on topical issues. If you would like to see more of our reporting, please consider subscribing. 1. Chinese astronauts greet first foreign crew member with historic handshake China’s latest crewed space mission, Shenzhou-24, successfully delivered three astronauts to the Tiangong space station on Wednesday, including its first...",
+          "tr": "Huawei ABD'deki davada 10 suçlamadan suçlu bulunurken, Nvidia CEO'su Jensen Huang sahneye geri döndü. SCMP, haftanın öne çıkan Asya ve dünya haberlerini derledi.",
+          "url": "https://www.scmp.com/news/world/article/3375979/huawei-guilty-10-counts-us-trial-nvidias-jensen-huang-returns-scmps-7-highlights",
+          "source": "South China Morning Post",
+          "published": "2026-11-27T04:15:06+00:00",
+          "topic": "chips",
+          "coverage": 1,
+          "score": 11,
+          "related": []
+        },
+        {
+          "title": "Jensen Huang Is Back, and So Is His Plaque at Denny’s",
+          "summary": "The chain said it had restored a plaque honoring Mr. Huang above a booth in San Jose, Calif., where he is said to have developed the idea for Nvidia.",
+          "tr": "Jensen Huang geri döndü ve Denny's restoranındaki plaketi tekrar yerine kondu. Plaket, Huang'ın Nvidia fikrini ilk olarak bu restoranda geliştirdiği anısına dikilmişti.",
+          "url": "https://www.nytimes.com/2026/11/26/business/dennys-jensen-huang-nvidia-plaque.html",
+          "source": "The New York Times",
+          "published": "2026-11-27T10:17:23+00:00",
+          "topic": "chips",
+          "coverage": 1,
+          "score": 8,
+          "related": []
+        }
+      ]
+    },
+    {
+      "id": "markets",
+      "name": "Markets & Big Tech",
+      "color": "#16a34a",
+      "stories": [
+        {
+          "title": "Anthropic Finishes First Full Week Above IPO Price",
+          "tr": "Anthropic, halka arz fiyatının üzerinde tam bir haftayı başarıyla tamamladı. Şirketin hisse performansındaki bu başarı, yatırımcıların yapay zeka sektörüne olan güvenini yansıtıyor.",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeVhwM1d4VGtCX3pRUlBUcWljb2JSOENMbHhNcW9WRDFCNnBrd2I5MzdkLVdOSkViVWFXeHNPQ1lwN0Rwd1kwR19XdGs0Ykd2NzBlNUVoaUMyVW5GRHFWYTl5MHlPQ0dibURnUkc5al8xczVnMmluV1ptWUhDVkQtNm9VYl9RWU1VWnVtQll3a0ZMQjFERHQ0T3F4ek80MjE4bWZWcHE0MF9Eb1ZZSzVuZk9EVHNSUQ?oc=5",
+          "source": "Bloomberg",
+          "published": "2026-11-28T03:13:47+00:00",
+          "topic": "markets",
+          "coverage": 18,
+          "score": 31.7,
+          "related": [
+            {
+              "source": "BigGo Finance",
+              "title": "Anthropic Shares Climb 11% to $91.88, Reclaiming $83 IPO Price After Rocky First Week",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwRWFqUkE3UG5PV3B6Y0pCUy1SYkFDZUVUUjQ0QmtVMDVpUUY5MVlmSHI1WVpwSEhTd0FiZ3hIXzRYbzNZd25VYW5vanFiZlg2aWk1UFNxaTN3OWs5cS1Xd3Q0ZVdPNjdhR1FQazR0TUZyemxZZ3c?oc=5"
+            },
+            {
+              "source": "Crypto Briefing",
+              "title": "Anthropic shares close at $91.88, holding above $83 IPO price after a volatile first week",
+              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0wUjZQcHZraVJyZTFrMUxDMERPOFZMOWZGUVdONjhBSEx2QzMwZ2d4QnAwYUxocWJFWUIzbW4xTV9nUlJqcjIzQ2RUWERiVEhHLUNmQnBqdGJaY3Z0Wlh2bGExRUhZeGpQZkNQblcwRmtabzVzTm5ibw?oc=5"
+            },
+            {
+              "source": "Briefs Finance",
+              "title": "Anthropic Stock Tops IPO Price After Volatile Week",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX1RyMlhERjZwTklTM182djJPSFpyYm53YUxYZEpoVkNSeHBvSzdTdUJmekhtUlZjLVBYdHJMUll4azlqZnhNQllvSUEwVlp6NndIZE11bjF4TmFzSDBWcDF6bk42OHFVRkpJaDhoSEZwbFFlcVpXYUw5ekxwVzl2YS1wVmFLNm5aS1E2QVp6X2ZDQQ?oc=5"
+            },
+            {
+              "source": "Yahoo Finance",
+              "title": "Anthropic Shares Jump After Volatile First Week Since IPO",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb21MeGpmMEZZNndhbHFpQktBSFhqWDB6cy1Zd3lSVmV0NjhLaGJwcE9WTHhDUWVyNGhEOEZuOUw0aDFmclh0SUxUbDBYQl9SSDhIUmU5eFdsaS1lVEZ0Y2gyQzJBS0ZNMXA0Ni1fTHktbS1tN2hDYTNBVzVNeU83NkhpdTVTVkdHWFdnOHhyakF5NkduQ3ZTb2puaW9hQXp1WXc?oc=5"
+            },
+            {
+              "source": "Bloomberg",
+              "title": "Anthropic Shares Jump After Volatile First Week Since IPO",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSGVqenZQM2JzRHFPVmVDWElvMUlUTXdHVFVlT2VOYWc3ZU5KM0czVlBfUGhNNWU0ekFjYU13YWdRS243RE10VEVHYW9DRzdmUmF4MndvQ2dnUmVxY1ZJZER0WnpZay12cUJqTE0tRUlGSlluYkgwem1wTG51d1FrdHF5SWtqa2F3MkNOaFN1Z0RrejFJOXdSLTFGZnJWTDk0emw4dlN0bVlRalJ0elIxdzAxUm9Idw?oc=5"
+            },
+            {
+              "source": "Unite.AI",
+              "title": "Anthropic Shares Close Above IPO Price After Two Sessions Below It",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTnpzTG4wZk1RZDZOT3lCUTYtUllBdUFQTmRvQ1RpWjhqT2JucUx2amx2QTdXSkI0MnZsX3dvNDF3YTY2QTlONUxuMTJKUUZpcjlkVmJ3eGQwWk9DbTdKejNOcEtuZkxqOWVndFJLaVFQcjczNXhQQ3puWC1MVmEzV256elB6blItcDQyLVRkVEVWZw?oc=5"
+            },
+            {
+              "source": "The Globe and Mail",
+              "title": "Stock Market Today, Nov. 27: Anthropic Jumps 11%, Reclaiming Its $83 IPO Price as Wall Street Rallies",
+              "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxObXNTY0pLc1lpRnVaR0VHV3BIT2NFVkRSYkRVNjBoa3JXcnVhRzZIaW9JckpJRnVVWDF0eWxTX3BxMHFGWnhOOHRXT1pEWGlCT1Z6OWhQdWtHUmFINlZKMU9KMUpOTzREa2FYOEFVajdjS3NpN2FwdkhXM2ZWXy1WdS0ySW1FQXE5cS1NazBVMjVJWXZoN3Z5TXd3SkdNVGlMLU5aZTZjOXFYQmExZnIzSXJnUnpIdnFETkxBMVd3NDI0Qm5CVUhxdnRvMXNJZVJhNG94clMyUW9HdXNSSkxCQ0JWbERtYnczd2ZNX1VYbTJVc19CY0stdERRaHoxSXVuYkJUUVJqdFhrbEE?oc=5"
+            },
+            {
+              "source": "Forbes",
+              "title": "Anthropic Jumps 11% As Tech Stocks Rebound",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeW4tTWszM09YN2pmTl9ib2RndDFBODJEV0x6d2xOaGZCUW1mc09MR1RjWTZTUHdRNDBPUjJpTGFrQlRiU210bHZMRW9acVBlVnY0Qi1YbmxhMnJqeDlRVEIyNVdoRFppVjhvSXduV1puSjBTa1ZGOVBseVNEY0hQN0tXa181Y2tXV3ExUHNCcGZLdzI2T2owZUx5cTc?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Tech Now",
+          "summary": "Ammie Sekhon looks at robotics that could one day help spacecraft act independently.",
+          "tr": "BBC Tech Now programında Ammie Sekhon, uzay araçlarının bağımsız hareket etmesini sağlayabilecek robotik teknolojileri ele alıyor. Otonom robotik, gelecekteki uzay keşif görevlerinde kritik bir rol oynayabilir.",
+          "url": "https://www.bbc.co.uk/iplayer/episode/m00353dd?at_medium=RSS&at_campaign=rss",
+          "source": "BBC",
+          "published": "2026-11-28T01:00:00+00:00",
+          "topic": "markets",
+          "coverage": 2,
+          "score": 17,
+          "related": [
+            {
+              "source": "Yahoo Finance",
+              "title": "Tech Stock Sell-Off: Down 23%, Is Meta a Buy Now?",
+              "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdk1heV9Xa19KT3FnOEdOOHRYSjFBeGxNT1p4YXFKRTBRMDR0dEVpWjFFaExRLWZENll0dEttWk5ReFJtalZPNjRFaU5rTlBoa1FKWjZTbjRxVkFiT01yQWZoUmVwNnlGMUJUVDUwNnkwNkJfVjVvNVU2T2tHSVJCc1VrbkRwN3NfTmtnYm9iXzNfVkE?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "US tech stocks rise in latest market swing",
+          "tr": "ABD teknoloji hisseleri son piyasa dalgalanmalarının ardından yeniden yükselişe geçti. Piyasalardaki bu toparlanma, yatırımcıların teknoloji sektörüne olan ilgisinin devam ettiğini gösteriyor.",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTTdCU2RLbHJwc2xuSTdlZ0QxelFBTGZyQ2VQdXpGRW4wcV9iTWJoQmdFbXhocEhRTmF6b1FVMmtnTktYSGJnY0tJaWlYT3BVVDBlZ3lDYW9hblp0ck03eUJoWWRlRFJuWFhEV3lqM24tQnhEeDdSLWQ3Q2ZvcTRUZW84Vlk?oc=5",
+          "source": "Financial Times",
+          "published": "2026-11-27T05:00:22+00:00",
+          "topic": "markets",
+          "coverage": 2,
+          "score": 16,
+          "related": [
+            {
+              "source": "조선일보",
+              "title": "New York Stock Market Rises on AI Tech Surge; Nasdaq Posts Largest Weekly Gain Since April",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcXZkZmNLOTlreFFEVGQxLWVRVW9rZ0FvS0xNQVpZUF9lUFVsZ2JFWVBqZ19qWDJxY0JhNFJIUjNqZGtwLVhnUmZ0ZEwxbFZaOVRIQlY0NXFQaUw4am43b0hfWFN1Ymt4X2NldUdDOUYwZ2NBTVBtRm1jeXlabmZYN1VJYWhualBRVnlNc3BR?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Tech rally lifts stock futures to wrap up a volatile week of trading",
+          "summary": "President Trump demands a probe into the GDP revision data.",
+          "tr": "Teknoloji hisselerindeki yükseliş, dalgalı geçen işlem haftasının sonunda borsa vadeli işlemlerini yukarı taşıdı. Öte yandan Başkan Trump, GSYİH revizyon verileri hakkında soruşturma talep etti.",
+          "url": "https://www.cnbc.com/2026/11/27/tech-rally-lifts-stock-futures-to-wrap-up-a-volatile-week-of-trading.html",
+          "source": "CNBC",
+          "published": "2026-11-27T11:55:41+00:00",
+          "topic": "markets",
+          "coverage": 2,
+          "score": 13,
+          "related": [
+            {
+              "source": "NDTV Profit",
+              "title": "US Tech Roars Back: Meta-Led 'Mag-Seven' Lifts Nasdaq; Chip Stocks Surge To Cap Volatile Week",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeVVwUWRaWk1KNHI1U0hLVzBfS3VnWUhGbkZTbWE4bi1ucnN2VU1PU2VFZE56VWEtdkxXbDk2WHQ3VDc1RlZLMkRIMWRtNjB5ZjVUckE1TzJ1WUdjVnF4OFVyN0pkaG1mUmhtcFplMHV0TDBkdk1SYkhxbDhBdmdRd2NZWEFsOFdBR2QzOEl1WnZlVU5wdVJlUEk1Mm1VUE05OHBLUFpsZ09BOXh6REtiTXJ6TV9nblkzQWdpUUhoWXJ5aXRNT3dNRUN4ZnpDZ9IB1gFBVV95cUxPTnpsNFphclRmT0dKdHR1N01xbHRidXlmOHNQZ1FiMFRvVDM3dmduMGV1Xzh1b2NaNzdjajZCNVppNVpHajFkWDc2UkZVdVJhejdCekJQUGV3dWpsRnV4SktwX3dEbUFiSkpMbGxmTTM3LW9oVlR0Wi1HV1I1ZlJhN2hNN0Y4UnJQMktCbk5rckh6UUpCTk1oV0xZeldCQnh4eDYzTDdFOEJLX2JJQlpaZTVmbWxJVkpKWU1jazVxSE13aEdZdFM1QzJTT2RVcU5tQ3d1MTZn?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "software",
+      "name": "Software & Developers",
+      "color": "#2563eb",
+      "stories": [
+        {
+          "title": "GitHub deletes post promoting PS5-to-PC project AnyPS5 days after axing 3,000 GTA 6 PC port repos",
+          "tr": "GitHub, 3.000 GTA 6 PC port deposunu kaldırdıktan birkaç gün sonra PS5-to-PC projesi AnyPS5'i tanıtan gönderiyi de sildi. Platform, telif hakkı ihlallerine karşı sıkı önlemler almaya devam ediyor.",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5",
+          "source": "TweakTown",
+          "published": "2026-11-27T19:10:04+00:00",
+          "topic": "software",
+          "coverage": 4,
+          "score": 12,
+          "related": [
+            {
+              "source": "Demokratis.co.id",
+              "title": "GitHub Promotes AnyPS5 After Removing GTA 6 PC Projects",
+              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pWXRQM1BFSFF6azhGazIzNlNDanRteTM0SnQ3dy11eG9GWExBSHlqOTFWcnZON1VrSjBua1VMdkoyelV1Zjc5eVNsREFSNUVPV1RxVzJfQXlXdXNNMW1yRVVBQlZxZw?oc=5"
+            },
+            {
+              "source": "bsinews.id",
+              "title": "GitHub Deletes GTA 6 PC Port Celebration Post After Backlash",
+              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE83aV9LLWdaVXZ1NEhrMGlqQU9JamstbEQwSEVOUFpfbXotM3VUTkR6SEtSVEFnYWV0UlV6OXhaZmZoaVNLUTQ0MUZVQXFteUpVb2taYlE0N0JEazRCdS0yUg?oc=5"
+            },
+            {
+              "source": "Windows Report",
+              "title": "GitHub Deletes Controversial GTA 6 Post Promoting AnyPS5 After Backlash",
+              "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOWtvLUM1R0xtazNXbXNMQ1dPYk9Sak9RNnlIQk5kemRtSXZEUXdmaGdMd1ZVellGd05mNUpFbFlWNlM0SmhRZHc0elVsVWJqUEJCTHZ3eDdhVlpkMXNPakM4TEhJYWJyRFpVQ0RJTDcwbDZXSXBTZlV4ZGlHTzZxbVpxcnFMWkREVmx5MF8zWFhQT3lSX0x3cXI4Skc4cGM?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "SAP investigates cyberattack on GitHub accounts, finds no evidence of customer data access",
+          "tr": "SAP, GitHub hesaplarına yönelik bir siber saldırıyı inceliyor ve müşteri verilerine erişildiğine dair bir kanıt bulamadığını açıkladı. Şirket güvenlik önlemlerini artırarak olası riskleri engellemeye çalışıyor.",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWHQwR3J5MGhLbDhlYUsyX1VkMXp4ekRaUFliYkxHTXkwRl95UzBBeGFVM2lpeUpqRWR3aDk4MVJHVFpIU1FjRDJBd2FJaGRicWZYOExvUDF3elROUGxHT1oxZ0hrNkR0OXBJeTkwOTdjVm52RmxJQmFmaUdPbDNHLWlGTWNsLWZaam9pTVhZWDZTUW5xUlpaR2g0WEtCakxEaVZVTW1kdXlqQ3pMcVBwNHNOUHp4SUw2eWlZLVVVbWVrdw?oc=5",
+          "source": "teiss",
+          "published": "2026-11-27T19:04:45+00:00",
+          "topic": "software",
+          "coverage": 3,
+          "score": 10.3,
+          "related": [
+            {
+              "source": "cwibc.co.id",
+              "title": "SAP Investigates Cyberattack on GitHub Development Systems",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5KSWNDTmVXWERjdHNqMkVyd1pyR3ZPZFRNa2s4OXE0TkJpN09jc1NGaldHdEpjUzVHX2RlSnBlVllGYXBkU2xNZ09XUTR4b0h5Qll5clZ0Mko1Z2pya2M0VENLXzhQWDEt?oc=5"
+            },
+            {
+              "source": "Demokratis.co.id",
+              "title": "SAP Investigates Cyberattack Targeting GitHub Development Systems",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5JZ1JVQ01TeFRXU19GYXNsSGlKSUFOcndLbXZNQzBJN3VhZ3lvbnFtN2RpUzkxeUxxOWlWc2s4Z0dUR00yUnBVd2N3SjZXZ0tBUXRWdHNyWU1SQUplUk8xSDdicE9qUHBkMTZ0RDFuYnN3dw?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Solana developers get a browser-based coding playground",
+          "tr": "Solana geliştiricileri için tarayıcı tabanlı bir kodlama ortamı kullanıma sunuldu. Bu araç, geliştiricilerin blok zinciri uygulamalarını daha hızlı ve kolay geliştirmelerine olanak tanıyor.",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTDdJZ2J2VVdpcDZzV1FoNGVlQTNpTWFlaDRLdXUyQ1AzTEprLTdKV21OR1g5VGRaR3YzWUY5V3dhYVdNcVVmMndyQlNCalE4WS15RDdFWVlnM2h0MnJYZ0FFVXBheE9fUEd4cVc2T3BrUDY5RHBncDViM05sN0JWVUtJTDNWUnRPX3ppOE9wOFBiMjFZeDF1b2VuX3RHa0V2a2JRVE5iRWp0bUdRYkV5OTNxbDZDcUhtazQtTnNuRVBJMTJCZ01Ia1hjX2VUQQ?oc=5",
+          "source": "TheStreet",
+          "published": "2026-11-27T17:04:05+00:00",
+          "topic": "software",
+          "coverage": 1,
+          "score": 10,
+          "related": []
+        },
+        {
+          "title": "GitHub Outage Today: Is GitHub Down in the US? Users Report Website Access, Login, Code Hosting, Repository & Developer Service Issues | Check Latest Downdetector Status",
+          "tr": "GitHub'da yaşanan kesinti nedeniyle ABD'deki kullanıcılar siteye erişim ve kod barındırma sorunları bildirdi. Downdetector verileri hizmetlerde geniş çaplı aksamalar olduğunu doğruladı.",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPVEhQZF9vbjc4cmpNU0dNYlR3ak5tTlRFWnFLTTYxNmJIcm1KREg5MENpTERJM3VYeXJ3aE52aHdOOTh2aWxZN0JScU9MZ1NOcVNHTjhVeFBEelRWQUI2VlhwQThlcjJDNFRNSUtZQnRhckdpRmdaUDJxd1g3LUpKUFhEX2F0enBRY2ZHdEU4Rkt2WGNsMy1HVlJOMDlIUndhX3FJWUxYTzQxckFKSk1MOWdlQmdoLW5NdDEtR2ZCMVRORTYtZDBWOEtLbWcxbnVOMjlQSFkya2V6MVFIM3hINHVhMlFUZFctOXVnR3ZzTmw4cHU1Tl9falQwYzlmUHNGYWgyQ2RGVVdjTEppa0dfTEtESW9nVjV3WG8xWHllYWtFVHZNdzNzU0RUT1RWa19FbnfSAbcCQVVfeXFMUGE1QlRvbnpsaThsVDYtTHJfamh4QUxXMHJ1ckRCMjdVTExhaHVNWEZZUjU3OFVNVmtpWmdTX0lqNWotdGYzaUZabjMyMk1yd0tYTW50bkJFQWstNkxhVGRFa2NablpfN2VLekk2clRhT1oxQTJWZUdHd0pHb2VsOS1OcDc3T0ZRNWE0b0FRMzJXTUczT1ZLQTZxY2tNaVhRb2dkR2FMTDh0Qm5EaWhJMFhReVpRUGVvdXFsOVZzV2g3SENRYmgwa3IzeGhfTjlLTGFMcG11NEttLWctenliWlJfR2ZNV3R0MjVGd3JKZF9VdWZtQl9pQWhLTWNqMVFrUS1namhJVzVJWkZvSDRDT3FQaXdVZDFNUTNTZmJ4WE9fdmJSSExtblRoc296SDlkQW1ZYU9HUWM?oc=5",
+          "source": "The Sunday Guardian",
+          "published": "2026-11-27T19:28:02+00:00",
+          "topic": "software",
+          "coverage": 1,
+          "score": 7,
+          "related": []
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "color": "#dc2626",
+      "stories": [
+        {
+          "title": "1Password data breach included some customer info, internal source code",
+          "tr": "1Password veri ihlalinde bazı müşteri bilgileri ve dahili kaynak kodları sızdırıldı. Güvenlik yazılımı sağlayan bir şirketin siber saldırıya uğraması, kullanıcı verilerinin güvenliği konusunda endişe yaratıyor.",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPX2xmeVdiRGN6RnFMVFQwT3ZIWHduYnU0bWg1bWx2d3RzWi1jY2RqWm1TbktjWlo2alRrOWVkQ21LVVNpQWpUYzZpaHZGbGFpcG1IY1d1MXpNaW16ZHlicnNQazN2aGZpSy13ZHJGelQ2MC1MeUV0SGp0dGFUZVlBWkdmT2tlaFExakZvd3NZanVLX2JLT2NZZ2ZYajBaaWw2M29BNzNZWmNFaUdacWlDYnhMcVFVcjRI?oc=5",
+          "source": "CSO Online",
+          "published": "2026-11-28T03:45:00+00:00",
+          "topic": "security",
+          "coverage": 17,
+          "score": 24.4,
+          "related": [
+            {
+              "source": "KYMA",
+              "title": "FIFA’s internal info stolen in cyberattack",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQdUZTLUp4Q3N4UFBJMlFHTDhvcHZQdzZySVIxVUlHTTFreFZXcnA3cEMtSFhoTGZnZ0VtQmdDdS1abHZ6LS1YM1JMNThoeldqTi0xd1pOeE5FdU1pZEx1OVlpd0xXWkhUd3RRTGxxVmdLN0hVQUIzT05kVmhmcFdkcXcxZw?oc=5"
+            },
+            {
+              "source": "kcentv",
+              "title": "FIFA says private information stolen during cyberattack",
+              "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRXJqejBTY0I2SEV4aXdVWUd2S0VtVWpjamhpRnBsbmZ6RTV0cnBVVG94bkxwMTFjR0ZkZXlxX0xBYW4wZndEWHl5VnQ3NEVNNzlQbGUxdXNiWldjRTEzbFA3TjFFM2dETmhZSzBBT0pDTGc3YVluS09xYXpwckhKQXd6TFB5XzlTa29ySThnY0pTT1E1V2FpSHJKVU02TWp3RENWVDdfQ29rUGN6WGJPOTZ1MU5Jb1VLd3NUTmFxTjRueUMzYlBmTGdRQkpoSzJFQUhBTm1YVk5WWXc?oc=5"
+            },
+            {
+              "source": "Sportcal",
+              "title": "FIFA suffers cyberattack, personal and business-related data stolen",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWE9seERiRDZPTUpSTXh4cEpRazJCRUNwdnoxU0NJZWk3TDNGQ243djc4M0kyb2hYSUFXakQzVVhzdkpoem85N01RMlZTdGtkT2lscmdZTU9lQXhFSFZ2UnhHVjRROE9xUVEtUmVDUVlzQ0xhRFY3SlpMTzVIRW9wT2k5SHNGSS1ySjdxeFkyWk5ZYzF4THZUcFFZcnc5dw?oc=5"
+            },
+            {
+              "source": "Security Affairs",
+              "title": "FIFA Confirms a Cyberattack, Hackers Claim 12 GB of Internal Files",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMzV2azZiT0hXSnpTb25uWFVOc0pmeDRrS0VjZWhrMlBsS0FSRHMzZW5KUnl3Z213bGVYN2JjWU5SbGNZdGJDMDQ0U0p6M0dzUllUaVdFdUcya0lkU25Cd3RoendMaFNSVG5NQUcwY0FuX2Q5V2NVa0UwVmdOaXhsUjl1b1BRSUg1X0lWdmhFMGtCejhxb3VfV292dW43VlNiR1NidUZtaHpnWEpEdHU3cGtOdXhTTmY00gG-AUFVX3lxTE5peEUtbVJuLXVldlIxcjFHMThhR1JoVmZCSUMwZWRTWXBWX2VmT0VxMXpkSlhrUEdMWFRLRnp5NUdhVVBVMlU5Mko0REpfdDRmN1BBR1NSUWNGRTY4RzVQb0hrRzB4ZVFjNUZVNkVfYzhHZjZfbG03cVZUaEV4clJOc1RvaEhjejlITzZza0ttS0NDOXItdlNwQ0liM1hSbjNNZkFOYVlvUFVPVUEyV0RySUJ3NE1ORUZTZHdmZXc?oc=5"
+            },
+            {
+              "source": "Local 3 News",
+              "title": "FIFA reports cyberattack after hackers access internal data",
+              "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSEJNTkJ6S1VXbnZGa1RDN0NnU1BJVUstNkFSVU9QRk5EZndFY3pSN0V4S1hnaGtLNXZxdmxSd2xJOVJEMy15VGFVUXo3ZlplRl9PMFJXUGdtc284VHM0VHdteXBYdUxfcnZMaktwbmVfc0NWM0hrcHNRaDVUNVEzeXpnLUx1MjFteDdVR1BTR2c5c1I5UzJBQUpSMEJmdnVzMDhXaEhkVV9BY3Vid1NZSHUxb01kd25wcHNWWFhKT0tYaHZaZWdWNTRQSHRGbU9sbDlzeE8zRWl2ZTUwcDVNR0ZpM3l1RlZWRHc?oc=5"
+            },
+            {
+              "source": "Help Net Security",
+              "title": "FIFA hacked, cybercriminals claim access to sensitive internal records",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBjOW40cnk2Z00wM0xEOXBkdmZ5aUdwUDNmSWxEVnJfNmtaLWd5ZEY0dHhGTWRHTkxwWmg1RVdsR1E3RzBIRV9WR2xfbU95YXh1UXNxRG1jMnloV1RBaWFUMlZMQUE0LXZTSXVjZ01XbTJrTGN6R0lqSkJB?oc=5"
+            },
+            {
+              "source": "Claim Depot",
+              "title": "Did the Mid Michigan Medical Billing Service data breach expose your personal information?",
+              "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSnVwVWVTZ0dTMTFuZTE5MHhjOW4xdUhlVGRSWTVSODI2eDV1N1lGVGVDTHowMkpYLXBRdS1jZjJ5VTI0MGJqQnFQTUV5WWRjWlRkdVgyMWdfbHhMbFV6X0lTMlV2THRRWTYwbEFYRjNiWHJIbjFMZmpMTTFKSTd4Rg?oc=5"
+            },
+            {
+              "source": "BleepingComputer",
+              "title": "New Boston Scientific data breach exposes personal, medical info",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLWthbFhMTmctb1hZZmV2UzZTU1VvM3BOeXNiaUtkYm1mdGlTdlZwVHlKNWYzbUxJb2lKMGhyTmZXNTdaN0FsTXEwT3FoNHRsQ2pTX1lvX25KM0tzejNkcm9mdjk0MklHNXkxdC1xcllRRzhSSW4td2NFcm1PWjJndFF0X0l1aWFiOE9CeWhIU01rVzZmTmZ4ME5SNlFfUHhBQUVFSFdBVlluc1RYNHpWUw?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Global news agency AFP reports cyberattack, shuts down content platform",
+          "tr": "Küresel haber ajansı AFP siber saldırıya uğradığını bildirdi ve içerik platformunu geçici olarak kapattı. Saldırı, medya kuruluşlarının kritik dijital altyapı risklerini bir kez daha ortaya koydu.",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNc2VaemhJM3ZTZHpmTnBkWnJQZTVqNlNDSEx3ZnhqanUzX3ZQbURiNURFNUdDc1NTWmtoRVI4ZHRXOFBGcjBuamRmYnJsQnZJd0pmNTBYQkpIYS02b1RkUkkzUWFLMThHLVIwazVIYTV4N0lHRkVGTU4yc0JWTXNFN3ZxaTlJRGNsMS12elNTU21CUGZlY1VkMzY5MERTNHFuVEpmMnRPVDBIY3dxNUVYVHp30gG3AUFVX3lxTE5VVnZOeS16aVVlMGNobmVwcnhVU1FuM0VVUzNTV1VlMXREU3NjVVRMUGxVb1R2cTR6QjhBamJJTmpiX3c1V3pwYndpOU1NNFp5RUNDQ2lwT2doalpaNE9uTk5jQlItSXdHYkpuMVlNdTNMb0JKTm9yd3NFRnhoLW5NQ1R4ZFNLMlBWcnBjelRUcDBmQkw2M2kwZndkWFZHVzBRTkhDS1JmSVJMSVdSaVdlQ2JMSjFWUQ?oc=5",
+          "source": "Al Jazeera",
+          "published": "2026-11-27T11:49:06+00:00",
+          "topic": "security",
+          "coverage": 5,
+          "score": 20.3,
+          "related": [
+            {
+              "source": "Dealroom",
+              "title": "Cyberattack forces AFP to pull global content platform offline",
+              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR1RhSHBPQVVSZHVvY29aLVVRd3BKN0RFS1FnQXJub3pRMFl4VVVieEZtVlhMTExOYlRMTldLdFVYSXFmaVpGMGxjYXRmMGYyNWoxTzhoYVZtejNBdmh4UEtQVzRsN2ZZVk9aZlh6MGpKLVVvc2NWS0RUM1o0WU1ZOWpBMy0yMG9oam5pRFVxa0dkS0ZyUTU1Z3g3Szg?oc=5"
+            },
+            {
+              "source": "Beinsure",
+              "title": "AFP cyberattack forces news distribution platform offline after security breach",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa09kYzB1RVRpdEc0SjNwRUdPNmJiNlFMVHBvaEZOTGdKUHVhTlJ2bmg4dkVibERSVVZ4Ul9DU1lEMlduSzVpc1BZUkVDbGhBMWR4dGVfZjBFLU5HOW1TWDNLXzdhT3FhazZyWmJLSVdaMnFsZWdNdmNORWM0OGZtWVZrcw?oc=5"
+            },
+            {
+              "source": "Cybernews",
+              "title": "Global news platform AFP knocked offline after cyberattack",
+              "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5zanR3MTVmTlQzZG03UzJHckVGb3NuZEptUjJsOUltMkhmc0tybEZsRFJfVmRKZkR2NDUxQkpkWG1jVDc4UC01a3lIMHBGcFJ6U2VYOFoyc3F5Q01nNFBabjVSN0FFNFdZRG5wZzIxam9YU3BUeHlV?oc=5"
+            },
+            {
+              "source": "Howl.Link",
+              "title": "AFP Confirms Cyberattack on News Platform Used by Media Clients Worldwide",
+              "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFBVT3hsODhlUTZ3Y0xPZW9ZV0J6U3M0eEtpUEpXU3Nsd1YxQmVfSUdYdGpDQWR4NXRxSzhB?oc=5"
+            }
+          ]
+        },
+        {
+          "title": "Cybersecurity News: ARTEX framework thrives, autonomous cyberattack warning, Australian travel agent breach",
+          "tr": "Siber güvenlik bülteninde ARTEX çerçevesinin başarısı, otonom siber saldırı uyarıları ve Avustralyalı seyahat acentesi ihlali öne çıkıyor. Bülten, sektördeki güncel tehditlere dikkat çekiyor.",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaGxnTXFpNXBJc2ZwRzdld3RoWnZYNGx6eU5tNHRKSEk2OHFETjlpQXFKN21zNnh4NnFwMnh4VnUwUEh0Mll1T1ByME9GSVg1ZDBVSjZBX1lJOV9aLTZDU3AwZUVMVFVTYmlkbmdoZF9BYkhXRXNFVmNzNnVXV2Z4cERCSGF0eEFUWUstbGpTaFJYWHNxWGlpVjJDNVlkazBfeHBSdGlwblBtclVtcVNtMWhlRldTOUYwTmFYdUNDN1JVX2hOS1NN?oc=5",
+          "source": "CISO Series",
+          "published": "2026-11-27T11:00:00+00:00",
+          "topic": "security",
+          "coverage": 1,
+          "score": 9,
+          "related": []
+        },
+        {
+          "title": "Hackers Hide PolinRider Malware in 375 GitHub Repositories",
+          "tr": "Korsanlar, PolinRider kötü amaçlı yazılımını 375 GitHub deposuna gizledi. Bu durum, açık kaynak kod depolarındaki güvenlik açıklarının yazılım tedarik zincirini tehdit ettiğini gösteriyor.",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTVE4TWQ1bEZaVEZFSG9oajR0TUhGTDREeExuelNHVUxLS0JRTVlUOFlaVWZ0cXBiQjMtX0xkekstdHpIOXF0Yjlha2hDb2d4aVlOZVlSX1Ntci10cGpISWY0cU9xaFdlM29VWkgwcE9XV2NINXZ2b3hVSllRX01tUk5FVmFLQ2NuUlVqV0NMdTBjVlY1c2VDcWZzbDVybFJheXMxbDBhXzlRMjFrbzdJTUVIeS1iSllXTW85aGNDaw?oc=5",
+          "source": "RS Web Solutions",
+          "published": "2026-11-28T03:00:00+00:00",
+          "topic": "security",
+          "coverage": 1,
+          "score": 8,
+          "related": []
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "trade secrets",
+      "partOfSpeech": "noun",
+      "meaningEn": "confidential business information that provides a competitive edge",
+      "meaningTr": "ticari sırlar",
+      "example": "OpenAI countersues Apple for stealing trade secrets",
+      "storyUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaFNnMVlYZkZkOXB1Sk41M093UXdVMnBDZFZQMFFKQXhWeFVYZnlDYjVfNlJ1NFBvYnA4YWp2YjdTeWxEcGlad2RRb3pCd0JLVU5HNVZxRmlYTlVBNXVzSlk5TURYYXpBZERNMmUzTUZLVFF4ZDhyY3E2emE3MWtMZEZIY3A?oc=5"
+    },
+    {
+      "word": "volatile",
+      "partOfSpeech": "adjective",
+      "meaningEn": "liable to change rapidly and unpredictably",
+      "meaningTr": "dalgalı, istikrarsız",
+      "example": "Tech rally lifts stock futures to wrap up a volatile week of trading",
+      "storyUrl": "https://www.cnbc.com/2026/11/27/tech-rally-lifts-stock-futures-to-wrap-up-a-volatile-week-of-trading.html"
+    },
+    {
+      "word": "risk appetite",
+      "partOfSpeech": "noun",
+      "meaningEn": "the level of risk that an investor or organization is willing to accept",
+      "meaningTr": "risk iştahı",
+      "example": "Bitcoin climbs above $61,000 as Nasdaq and tech stocks rebound, signaling renewed risk appetite.",
+      "storyUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE56T0k1WnJUSEJldG1xSl9aVkQ5dFZYazZsRlg5S2FLYXdya19kb2Q4eXFfUHJwNjNsRTF1Q1Fqckd6cGNKQnFTTkhVMjNEbElXR1dzcE0tN2lXUjFPdEp4Ym1jNTBXQ1gtel9kNnpZVkE3anJqX2g4XzJiWQ?oc=5"
+    },
+    {
+      "word": "steer clear of",
+      "partOfSpeech": "phrasal verb",
+      "meaningEn": "to avoid someone or something completely",
+      "meaningTr": "uzak durmak, kaçınmak",
+      "example": "OpenAI asked investors to steer clear of xAI, Anthropic and three other named rivals",
+      "storyUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZRTFlczVTaG93T1MteExmUXJFWU5FckJwY2MyUVkxZUZvNnVVZnNwSHk3aFRzejFoaVBxTUllN0V2akNkUkFJb25acHRaTUQ1THJqaF93NWFDaFR5YmkzNjcyMGllVkl6V3ZBeW03V214TGxrd2ozV3Ricw?oc=5"
+    },
+    {
+      "word": "rebounded",
+      "partOfSpeech": "verb",
+      "meaningEn": "recovered or bounced back after a period of decline",
+      "meaningTr": "yeniden yükseldi, toparlandı",
+      "example": "Chinese stocks rebounded sharply after a rare intraday state media readout cheered investors as top policymakers pledged market liquidity support.",
+      "storyUrl": "https://www.cnbc.com/2026/11/27/china-chip-stocks-beijing-market-support.html"
+    }
+  ]
+}
